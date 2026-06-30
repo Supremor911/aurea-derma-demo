@@ -25,8 +25,12 @@
   stapeln statt überlaufen, Anker-Offset (Überschriften nicht mehr unter der Nav), Tap-Ziele ≥ 44 px,
   klickbare `tel:`/`mailto:`-Footer, Formular-`label`/`for`/`autocomplete`/`inputmode`, Touch-`:active`-
   Feedback ohne „klebendes" Hover, vollständiges `prefers-reduced-motion`, Fokusführung & `role=status`.
-  Art-direktierter Smartphone-Hero (eigener 4:5-Crop) und Hero-Blickführung in die Headline. Mockup
-  **und** WP, jeweils real im Browser-Engine (CDP-Geräteemulation) verifiziert.
+  **Goldstandard-Smartphone-Hero (30.6.):** statt eines aus dem Querformat gecroppten Porträts (Krone
+  fadete ins Schwarz) ein per Gemini **ausgepaintetes natives 9:16-Porträt DERSELBEN Frau** wie auf
+  Desktop (Kontinuität gewahrt) — voller Kopf mit Kopffreiheit, Gesicht hoch, untere Bildhälfte löst
+  sich ins Tiefdunkel als Textbett auf; CSS-Overlay neu unten-gewichtet (Kopf nicht mehr verdunkelt) +
+  schmaler Nav-Scrim. 3-Perspektiven-Gremium (Art-Direction · Frontend · Brand) → einstimmig Outpainting;
+  auf 360/390/414 in Mockup **und** WP visuell verifiziert. Buchungs-/Anamnese-Strecke ebenso CDP-geprüft.
 
 ## Ausschreibungs-Scorecard (ehrlich, evidenzbasiert)
 

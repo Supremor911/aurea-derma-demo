@@ -4,9 +4,10 @@ Reads key from E:/Freelance/.env.
 Usage:
   python gemini.py list
   python gemini.py gen "<prompt>" <outfile> [model] [aspect]
-  python gemini.py batch <spec.json> <outdir>
+  python gemini.py edit "<prompt>" <infile> <outfile> [model] [aspect]
+  python gemini.py batch <spec.json> <outdir>            (spec items may carry "image": "<path>" for editing)
 """
-import sys, json, base64, urllib.request, urllib.error, re, os
+import sys, json, base64, urllib.request, urllib.error, re, os, mimetypes
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 ENV = r"E:/Freelance/.env"
@@ -67,10 +68,37 @@ def gen(prompt, outfile, model="gemini-2.5-flash-image", aspect=None):
         return True, f"{n} bytes"
     return False, f"no image part: {json.dumps(j)[:300]}"
 
+def _b64_image(path):
+    mt = mimetypes.guess_type(path)[0] or "image/jpeg"
+    with open(path, "rb") as f:
+        return mt, base64.b64encode(f.read()).decode()
+
+def gen_edit(prompt, infile, outfile, model="gemini-3-pro-image", aspect=None):
+    """Bild-Editing/Outpainting: Input-Bild + Text-Prompt → neues Bild."""
+    url = f"{BASE}/models/{model}:generateContent?key={KEY}"
+    gcfg = {"responseModalities": ["IMAGE"]}
+    if aspect:
+        gcfg["imageConfig"] = {"aspectRatio": aspect}
+    mt, b64 = _b64_image(infile)
+    body = {"contents": [{"parts": [
+        {"inline_data": {"mime_type": mt, "data": b64}},
+        {"text": prompt},
+    ]}], "generationConfig": gcfg}
+    st, j = http(url, body, "POST")
+    if st != 200:
+        return False, f"HTTP {st}: {json.dumps(j)[:300]}"
+    n = _save_first_image(j, outfile)
+    if n:
+        return True, f"{n} bytes"
+    return False, f"no image part: {json.dumps(j)[:300]}"
+
 def one(item, outdir, default_model):
     out = os.path.join(outdir, item["filename"])
     model = item.get("model", default_model)
-    ok, msg = gen(item["prompt"], out, model, item.get("aspect"))
+    if item.get("image"):
+        ok, msg = gen_edit(item["prompt"], item["image"], out, model, item.get("aspect"))
+    else:
+        ok, msg = gen(item["prompt"], out, model, item.get("aspect"))
     return item["slot"], ok, msg, model
 
 def batch(specfile, outdir, default_model="gemini-3-pro-image", workers=3):
@@ -97,6 +125,13 @@ if __name__ == "__main__":
         model = sys.argv[4] if len(sys.argv) > 4 else "gemini-2.5-flash-image"
         aspect = sys.argv[5] if len(sys.argv) > 5 else None
         ok, msg = gen(prompt, outfile, model, aspect)
+        print(("OK " if ok else "FAIL ") + msg)
+        sys.exit(0 if ok else 1)
+    elif cmd == "edit":
+        prompt, infile, outfile = sys.argv[2], sys.argv[3], sys.argv[4]
+        model = sys.argv[5] if len(sys.argv) > 5 else "gemini-3-pro-image"
+        aspect = sys.argv[6] if len(sys.argv) > 6 else None
+        ok, msg = gen_edit(prompt, infile, outfile, model, aspect)
         print(("OK " if ok else "FAIL ") + msg)
         sys.exit(0 if ok else 1)
     elif cmd == "batch":

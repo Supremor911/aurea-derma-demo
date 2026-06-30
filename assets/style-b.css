@@ -379,8 +379,13 @@ p, .b-lead { text-wrap: pretty; }
   .b-nav.open .b-nav-toggle span:nth-child(2) { opacity: 0; }
   .b-nav.open .b-nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
   .b-hero { align-items: flex-end; padding-bottom: clamp(3rem,10vw,5rem); padding-top: calc(5rem + env(safe-area-inset-top,0px)); }
-  .b-hero-bg img { object-position: 60% center; }
-  .b-hero-bg::after { background: linear-gradient(0deg, var(--noir) 6%, rgba(23,19,15,0.55) 46%, rgba(23,19,15,0.5) 100%); }
+  .b-hero-bg img { object-position: 50% center; }
+  /* Overlay: unten dunkle Textzone, oben KLAR — der Kopf wird nicht mehr verdunkelt. */
+  .b-hero-bg::after { background: linear-gradient(to top,
+    var(--noir) 0%, rgba(23,19,15,0.90) 24%, rgba(23,19,15,0.45) 46%, rgba(23,19,15,0.10) 64%, rgba(23,19,15,0) 78%); }
+  /* Schmaler Nav-Scrim nur ganz oben (erreicht die Haarkrone nie), für Wortmarke/Burger-Kontrast. */
+  .b-hero-bg::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 12vh; z-index: 1; pointer-events: none;
+    background: linear-gradient(to bottom, rgba(23,19,15,0.5), transparent); }
   /* Scroll-Hinweis auf Touch ausblenden (überlagerte sonst die Buttons im bottom-aligned Hero) */
   .b-scroll { display: none; }
   .b-serv { grid-template-columns: 1fr; }
@@ -404,8 +409,9 @@ p, .b-lead { text-wrap: pretty; }
   .bk-week { grid-template-columns: repeat(3, 1fr); }
   .bk-steps .lbl { display: none; }
   .bk-steps { justify-content: center; }
-  /* Portrait-Hero (4:5): Gesicht oben halten, dunkle Textzone unten zeigen */
-  .b-hero-bg img { object-position: 50% 8%; transform-origin: 50% 30%; }
+  /* Vertikales Porträt (9:16): voller Kopf mit Kopffreiheit; vertikales Framing lebt im ASSET
+     (cover fittet bei 100svh immer nach Höhe → object-position-Y inert, daher horizontal zentriert). */
+  .b-hero-bg img { object-position: 50% center; transform-origin: 52% 34%; opacity: 1; }
 }
 @media (max-width: 480px) {
   .bk-week { grid-template-columns: repeat(2, 1fr); }
