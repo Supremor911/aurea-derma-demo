@@ -125,10 +125,14 @@ body.b-noscroll { overflow: hidden; }
   linear-gradient(90deg, var(--noir) 8%, rgba(23,19,15,0.72) 42%, rgba(23,19,15,0.30) 70%, rgba(23,19,15,0.55) 100%),
   linear-gradient(0deg, var(--noir) 2%, transparent 30%); }
 .b-hero-inner { position: relative; z-index: 2; width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--gut); }
-.b-hero h1 { font-size: var(--fs-display); max-width: 15ch; margin: 1.4rem 0 1.6rem; color: var(--bone); font-weight: 300; }
+.b-hero h1 { font-size: var(--fs-display); max-width: 15ch; margin: 1.65rem 0 1.85rem; color: var(--bone); font-weight: 300; }
 .b-hero h1 em { font-style: italic; color: var(--gold-soft); }
 .b-hero .b-lead { max-width: 46ch; color: #E8E1D4; }
-.b-hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.4rem; }
+.b-hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.7rem; }
+/* Primär-CTA dominiert: Lift-Schatten auf der Creme-Taste; Sekundär (Outline) bewusst leiser. */
+.b-hero-actions .b-btn-cream { box-shadow: 0 16px 40px -18px rgba(0,0,0,0.75); }
+.b-hero-actions .b-btn-outline { border-color: rgba(243,236,223,0.22); color: var(--bone-mut); }
+.b-hero-actions .b-btn-outline:hover { border-color: rgba(243,236,223,0.55); color: var(--bone); }
 .b-scroll { position: absolute; bottom: 1.6rem; left: 50%; transform: translateX(-50%); z-index: 2;
   font-size: 0.72rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--bone-mut);
   display: flex; flex-direction: column; align-items: center; gap: 0.6rem;
@@ -380,11 +384,12 @@ p, .b-lead { text-wrap: pretty; }
   .b-nav.open .b-nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
   .b-hero { align-items: flex-end; padding-bottom: clamp(3rem,10vw,5rem); padding-top: calc(5rem + env(safe-area-inset-top,0px)); }
   .b-hero-bg img { object-position: 50% center; }
-  /* Overlay: unten dunkle Textzone inkl. Eyebrow-Band kräftiger; oben (Augen/Stirn) bleibt klar. */
+  /* Scrim (gemessen): dunkle Textzone bis ins Eyebrow-Band (~57–61% v.u.) für WCAG-AA, dann
+     SCHARFER Feather (61→73%) → Augen/Stirn (~69% v.u.) bleiben klar. */
   .b-hero-bg::after { background: linear-gradient(to top,
-    var(--noir) 0%, rgba(23,19,15,0.92) 28%, rgba(23,19,15,0.55) 46%, rgba(23,19,15,0.18) 62%, rgba(23,19,15,0) 80%); }
-  /* Text gegen Haut absetzen: straffe Kante + weicher dunkler Schein heben Gold/Creme ab. */
-  .b-hero .b-eyebrow { text-shadow: 0 0 3px rgba(8,6,4,0.5), 0 1px 18px rgba(8,6,4,0.82); }
+    var(--noir) 0%, rgba(23,19,15,0.80) 40%, rgba(23,19,15,0.78) 63%, rgba(23,19,15,0.22) 69%, rgba(23,19,15,0) 75%); }
+  /* Eyebrow auf helleres Champagner-Gold (höhere Luminanz → AA mit moderatem Scrim; = H1-Akzentfarbe). */
+  .b-hero .b-eyebrow { color: var(--gold-soft); text-shadow: 0 0 3px rgba(8,6,4,0.5), 0 1px 18px rgba(8,6,4,0.82); }
   .b-hero h1 { text-shadow: 0 2px 22px rgba(8,6,4,0.45); }
   /* Schmaler Nav-Scrim nur ganz oben (erreicht die Haarkrone nie), für Wortmarke/Burger-Kontrast. */
   .b-hero-bg::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 12vh; z-index: 1; pointer-events: none;
@@ -411,7 +416,10 @@ p, .b-lead { text-wrap: pretty; }
 /* Sehr schmale Phones: H1 minimal kleiner, damit „Schöne Haut ist" einzeilig bleibt (2-zeilige H1).
    So rutscht das Eyebrow auf die Kiefer-/Halspartie (dunkler) statt über die helle Wange. */
 @media (max-width: 389px) {
-  .b-hero h1 { font-size: 2.7rem; }
+  /* Sehr schmal + höhenbegrenzt: H1 kleiner UND Abstände kompakt (Öffnen nur ≥390), damit das
+     Eyebrow tief/dunkel bleibt (gemessen AA) und der Hero nicht überläuft. */
+  .b-hero h1 { font-size: 2.7rem; margin: 1.3rem 0 1.45rem; }
+  .b-hero-actions { margin-top: 2.2rem; }
 }
 @media (max-width: 760px) {
   .bk-week { grid-template-columns: repeat(3, 1fr); }
