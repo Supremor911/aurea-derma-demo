@@ -134,7 +134,7 @@
   <div class="b-head c b-reveal">
     <span class="b-eyebrow c">Ihr persönlicher Fragebogen</span>
     <h2>Longevity-Anamnese starten.</h2>
-    <p>Dieser Fragebogen hilft uns, Sie und Ihre Haut vor dem Erstgespräch besser kennenzulernen. Bitte füllen Sie ihn in Ruhe aus – alle Angaben sind freiwillig und werden streng vertraulich behandelt.</p>
+    <p>Dieser Fragebogen hilft uns, Sie und Ihre Haut vor dem Erstgespräch besser kennenzulernen. Bitte füllen Sie ihn in Ruhe aus. Bis auf wenige Pflichtangaben (mit <span class="b-req" aria-hidden="true">*</span> markiert), die wir allein für Ihre Kontaktaufnahme benötigen, sind alle Angaben freiwillig und werden streng vertraulich behandelt.</p>
   </div>
 
   <div class="b-form b-reveal d1" id="bAnamnese">
@@ -150,20 +150,21 @@
         <div class="step-label">Schritt 1 von 4</div>
         <h4>Persönliche Angaben</h4>
         <div class="b-field-row">
-          <div class="b-field"><label for="an-vorname">Vorname</label><input id="an-vorname" type="text" autocomplete="given-name" placeholder="Ihr Vorname"></div>
-          <div class="b-field"><label for="an-nachname">Nachname</label><input id="an-nachname" type="text" autocomplete="family-name" placeholder="Ihr Nachname"></div>
+          <div class="b-field"><label for="an-vorname">Vorname <span class="b-req" aria-hidden="true">*</span><span class="b-vh">(Pflichtfeld)</span></label><input id="an-vorname" type="text" autocomplete="given-name" aria-required="true" aria-describedby="err-an-vorname" placeholder="Ihr Vorname"><p class="b-field-error" id="err-an-vorname" hidden></p></div>
+          <div class="b-field"><label for="an-nachname">Nachname <span class="b-req" aria-hidden="true">*</span><span class="b-vh">(Pflichtfeld)</span></label><input id="an-nachname" type="text" autocomplete="family-name" aria-required="true" aria-describedby="err-an-nachname" placeholder="Ihr Nachname"><p class="b-field-error" id="err-an-nachname" hidden></p></div>
         </div>
         <div class="b-field-row">
           <div class="b-field"><label for="an-gebdat">Geburtsdatum</label><input id="an-gebdat" type="date" autocomplete="bday"></div>
-          <div class="b-field"><label for="an-tel">Telefon</label><input id="an-tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="+41 79 000 00 00"></div>
+          <div class="b-field"><label for="an-tel">Telefon <span class="b-req b-req-tel" aria-hidden="true" hidden>*</span></label><input id="an-tel" type="tel" inputmode="tel" autocomplete="tel" aria-describedby="err-an-tel" placeholder="+41 79 000 00 00"><p class="b-field-error" id="err-an-tel" hidden></p></div>
         </div>
-        <div class="b-field"><label for="an-email">E-Mail-Adresse</label><input id="an-email" type="email" inputmode="email" autocomplete="email" placeholder="ihre.adresse@beispiel.ch"></div>
-        <fieldset class="b-field">
-          <legend>Bevorzugte Kontaktart</legend>
+        <div class="b-field"><label for="an-email">E-Mail-Adresse <span class="b-req b-req-email" aria-hidden="true" hidden>*</span></label><input id="an-email" type="email" inputmode="email" autocomplete="email" aria-describedby="err-an-email" placeholder="ihre.adresse@beispiel.ch"><p class="b-field-error" id="err-an-email" hidden></p></div>
+        <fieldset class="b-field" aria-describedby="err-kontaktart">
+          <legend>Bevorzugte Kontaktart <span class="b-req" aria-hidden="true">*</span><span class="b-vh">(Pflichtfeld)</span></legend>
           <div class="b-choices">
-            <label class="b-choice"><input type="radio" name="kontaktart"> E-Mail</label>
-            <label class="b-choice"><input type="radio" name="kontaktart"> Telefon</label>
+            <label class="b-choice"><input type="radio" name="kontaktart" id="ka-email" value="email" aria-controls="an-email"> E-Mail</label>
+            <label class="b-choice"><input type="radio" name="kontaktart" id="ka-tel" value="tel" aria-controls="an-tel"> Telefon</label>
           </div>
+          <p class="b-field-error" id="err-kontaktart" hidden></p>
         </fieldset>
       </div>
 
@@ -228,11 +229,13 @@
         <div class="step-label">Schritt 4 von 4</div>
         <h4>Bestätigung &amp; Datenschutz</h4>
         <div class="b-field"><label for="an-anmerkung">Möchten Sie uns vorab noch etwas mitteilen?</label><textarea id="an-anmerkung" placeholder="Optionale Anmerkungen"></textarea></div>
-        <label class="b-consent"><input type="checkbox"><span>Ich habe die <a href="datenschutz-b.html" style="color:var(--gold);text-decoration:underline">Datenschutzerklärung</a> gelesen und willige ein, dass meine Angaben zur Vorbereitung und Durchführung der ärztlichen Beratung vertraulich verarbeitet werden.</span></label>
-        <label class="b-consent"><input type="checkbox"><span>Ich bin damit einverstanden, zur Terminkoordination über die angegebene Kontaktart kontaktiert zu werden.</span></label>
+        <label class="b-consent"><input type="checkbox" id="an-consent-datenschutz" aria-required="true" aria-describedby="err-consents"><span>Ich habe die <a href="datenschutz-b.html" style="color:var(--gold);text-decoration:underline">Datenschutzerklärung</a> gelesen und willige ein, dass meine Angaben zur Vorbereitung und Durchführung der ärztlichen Beratung vertraulich verarbeitet werden. <span class="b-req" aria-hidden="true">*</span></span></label>
+        <label class="b-consent"><input type="checkbox" id="an-consent-kontakt" aria-required="true" aria-describedby="err-consents"><span>Ich bin damit einverstanden, zur Terminkoordination über die angegebene Kontaktart kontaktiert zu werden. <span class="b-req" aria-hidden="true">*</span></span></label>
+        <p class="b-field-error" id="err-consents" hidden></p>
       </div>
 
     </div>
+    <div id="bFormAlert" class="b-form-alert" role="alert" aria-live="assertive" hidden></div>
     <div class="b-form-nav">
       <button class="b-btn b-btn-outline" data-bprev style="display:none">Zurück</button>
       <button class="b-btn b-btn-cream" data-bnext>Weiter</button>

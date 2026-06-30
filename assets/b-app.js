@@ -172,37 +172,111 @@
     var fnext = bform.querySelector('[data-bnext]');
     var fprev = bform.querySelector('[data-bprev]');
     var fcur = 0;
-    var consents = Array.prototype.slice.call(bform.querySelectorAll('.b-consent input[type="checkbox"]'));
-    var consentsOk = function () { return consents.length === 0 || consents.every(function (c) { return c.checked; }); };
-    var updateNext = function () {
-      var blocked = (fcur === fsteps.length - 1) && !consentsOk();
-      fnext.disabled = blocked;
-      fnext.style.opacity = blocked ? '0.45' : '';
-      fnext.style.cursor = blocked ? 'not-allowed' : '';
+    // Feldreferenzen + Pflicht-Validierung (Gremium-Spez.: validate-on-submit, then live)
+    var $ = function (id) { return document.getElementById(id); };
+    var vorname = $('an-vorname'), nachname = $('an-nachname'), email = $('an-email'), tel = $('an-tel');
+    var kaEmail = $('ka-email'), kaTel = $('ka-tel');
+    var fsKontakt = kaEmail ? kaEmail.closest('fieldset') : null;
+    var c1 = $('an-consent-datenschutz'), c2 = $('an-consent-kontakt');
+    var reqEmail = bform.querySelector('.b-req-email'), reqTel = bform.querySelector('.b-req-tel');
+    var falert = $('bFormAlert');
+    var MSG = {
+      vorname: 'Bitte nennen Sie uns Ihren Vornamen.',
+      nachname: 'Bitte nennen Sie uns auch Ihren Nachnamen.',
+      kontaktart: 'Bitte wählen Sie, wie wir Sie erreichen dürfen – per E-Mail oder Telefon.',
+      emailEmpty: 'Bitte hinterlegen Sie Ihre E-Mail-Adresse, damit wir Sie wie gewünscht erreichen.',
+      emailInvalid: 'Diese E-Mail-Adresse scheint noch nicht vollständig zu sein – bitte prüfen Sie sie kurz (z. B. name@beispiel.ch).',
+      telEmpty: 'Bitte hinterlegen Sie Ihre Telefonnummer, damit wir Sie zurückrufen können.',
+      telInvalid: 'Diese Nummer wirkt noch unvollständig – bitte sehen Sie sie kurz durch (z. B. +41 79 000 00 00).',
+      consentD: 'Bitte bestätigen Sie kurz die Datenschutzerklärung – erst dann dürfen wir Ihre Anfrage bearbeiten.',
+      consentK: 'Bitte bestätigen Sie, dass wir Sie zur Terminkoordination kontaktieren dürfen.',
+      summary: 'Bitte ergänzen Sie noch die markierten Angaben, dann begleiten wir Sie weiter.'
     };
+    function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test((v || '').trim()); }
+    function validPhone(v) { return (v || '').replace(/[^0-9]/g, '').length >= 7; }
+    var ICON = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>';
+    function setErr(ctrl, errId, msg) {
+      var e = $(errId); if (e) { e.innerHTML = ICON + '<span>' + msg + '</span>'; e.hidden = false; }
+      if (ctrl) { ctrl.setAttribute('aria-invalid', 'true'); ctrl.dataset.touched = '1'; }
+    }
+    function clearErr(ctrl, errId) {
+      var e = $(errId); if (e) { e.hidden = true; e.textContent = ''; }
+      if (ctrl) ctrl.removeAttribute('aria-invalid');
+    }
+    function selKontakt() { var r = bform.querySelector('input[name="kontaktart"]:checked'); return r ? r.value : null; }
+    function toggleReq(ctrl, mark, on) {
+      if (!ctrl) return;
+      if (on) { ctrl.setAttribute('aria-required', 'true'); if (mark) mark.hidden = false; }
+      else { ctrl.removeAttribute('aria-required'); if (mark) mark.hidden = true; }
+    }
+    function applyKontaktart() {
+      var k = selKontakt();
+      toggleReq(email, reqEmail, k === 'email');
+      toggleReq(tel, reqTel, k === 'tel');
+      if (k !== 'email') clearErr(email, 'err-an-email');
+      if (k !== 'tel') clearErr(tel, 'err-an-tel');
+    }
+    // validateStep(i, mark): mark=true → Fehler anzeigen; mark=false → nur gültige (berührte) Fehler räumen
+    function validateStep(i, mark) {
+      var ok = true, firstBad = null;
+      function bad(ctrl, errId, msg) { ok = false; if (!firstBad) firstBad = ctrl; if (mark) setErr(ctrl, errId, msg); }
+      function good(ctrl, errId) { if (mark || (ctrl && ctrl.dataset.touched)) clearErr(ctrl, errId); }
+      if (i === 0) {
+        if (!vorname.value.trim()) bad(vorname, 'err-an-vorname', MSG.vorname); else good(vorname, 'err-an-vorname');
+        if (!nachname.value.trim()) bad(nachname, 'err-an-nachname', MSG.nachname); else good(nachname, 'err-an-nachname');
+        var k = selKontakt();
+        if (!k) { ok = false; if (!firstBad) firstBad = kaEmail; if (mark) { setErr(null, 'err-kontaktart', MSG.kontaktart); if (fsKontakt) fsKontakt.setAttribute('aria-invalid', 'true'); } }
+        else {
+          if (mark) { clearErr(null, 'err-kontaktart'); if (fsKontakt) fsKontakt.removeAttribute('aria-invalid'); }
+          if (k === 'email') { if (!validEmail(email.value)) bad(email, 'err-an-email', email.value.trim() ? MSG.emailInvalid : MSG.emailEmpty); else good(email, 'err-an-email'); }
+          else { if (!validPhone(tel.value)) bad(tel, 'err-an-tel', tel.value.trim() ? MSG.telInvalid : MSG.telEmpty); else good(tel, 'err-an-tel'); }
+        }
+      } else if (i === 3) {
+        if (c1 && !c1.checked) bad(c1, 'err-consents', MSG.consentD);
+        else if (c2 && !c2.checked) bad(c2, 'err-consents', MSG.consentK);
+        else { if (mark || (c1 && c1.dataset.touched) || (c2 && c2.dataset.touched)) { clearErr(c1, 'err-consents'); if (c2) c2.removeAttribute('aria-invalid'); } }
+      }
+      return { ok: ok, firstBad: firstBad };
+    }
+    function setAlert(m) { if (falert) { falert.textContent = m; falert.hidden = false; } }
+    function clearAlert() { if (falert) { falert.hidden = true; falert.textContent = ''; } }
+    function liveClear() { var r = validateStep(fcur, false); if (r.ok) clearAlert(); }
+    [vorname, nachname, email, tel].forEach(function (c) { if (c) c.addEventListener('input', liveClear); });
+    bform.querySelectorAll('input[name="kontaktart"]').forEach(function (r) { r.addEventListener('change', function () { applyKontaktart(); liveClear(); }); });
+    [c1, c2].forEach(function (c) { if (c) c.addEventListener('change', liveClear); });
+
     var frender = function () {
       fsteps.forEach(function (s, i) { s.classList.toggle('active', i === fcur); });
       fdots.forEach(function (d, i) { d.classList.toggle('active', i <= fcur); });
       fprev.style.display = fcur === 0 ? 'none' : '';
       fnext.textContent = fcur === fsteps.length - 1 ? 'Anfrage absenden' : 'Weiter';
-      updateNext();
+      clearAlert();
     };
-    consents.forEach(function (c) { c.addEventListener('change', updateNext); });
+    function finishForm() {
+      bform.querySelector('.b-form-body').innerHTML =
+        '<div class="b-form-done" role="status" tabindex="-1"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>' +
+        '<h4>Vielen Dank für Ihr Vertrauen</h4>' +
+        '<p>Ihre Angaben sind bei uns eingegangen. Dr. med. Carla Brunner und das AUREA Team melden sich zeitnah und diskret bei Ihnen, um Ihr persönliches Longevity-Anamnese-Gespräch zu vereinbaren.</p>' +
+        '<p style="margin-top:1rem;font-size:0.82rem;color:var(--bone-mut);opacity:0.7">Demonstration — in diesem Mockup werden keine Daten übermittelt oder gespeichert.</p></div>';
+      var nav = bform.querySelector('.b-form-nav'); if (nav) nav.style.display = 'none';
+      if (falert) falert.hidden = true;
+      fdots.forEach(function (d) { d.classList.add('active'); });
+      var done = bform.querySelector('.b-form-done'); if (done) done.focus();
+    }
     fnext.addEventListener('click', function () {
-      if (fnext.disabled) return;
+      var res = validateStep(fcur, true);
+      if (!res.ok) { setAlert(MSG.summary); if (res.firstBad) res.firstBad.focus(); return; }
+      clearAlert();
       if (fcur < fsteps.length - 1) { fcur++; frender(); }   // kein scrollIntoView → keine Y-Sprünge
       else {
-        bform.querySelector('.b-form-body').innerHTML =
-          '<div class="b-form-done" role="status" tabindex="-1"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>' +
-          '<h4>Vielen Dank für Ihr Vertrauen</h4>' +
-          '<p>Ihre Angaben sind bei uns eingegangen. Dr. med. Carla Brunner und das AUREA Team melden sich zeitnah und diskret bei Ihnen, um Ihr persönliches Longevity-Anamnese-Gespräch zu vereinbaren.</p>' +
-          '<p style="margin-top:1rem;font-size:0.82rem;color:var(--bone-mut);opacity:0.7">Demonstration — in diesem Mockup werden keine Daten übermittelt oder gespeichert.</p></div>';
-        bform.querySelector('.b-form-nav').style.display = 'none';
-        fdots.forEach(function (d) { d.classList.add('active'); });
-        var done = bform.querySelector('.b-form-done'); if (done) done.focus();
+        var r0 = validateStep(0, true), r3 = validateStep(3, true);
+        if (!r0.ok) { fcur = 0; frender(); setAlert(MSG.summary); if (r0.firstBad) r0.firstBad.focus(); return; }
+        if (!r3.ok) { setAlert(MSG.summary); if (r3.firstBad) r3.firstBad.focus(); return; }
+        finishForm();
       }
     });
     fprev.addEventListener('click', function () { if (fcur > 0) { fcur--; frender(); } });
+    applyKontaktart();
     frender();
   }
 
