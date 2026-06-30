@@ -31,7 +31,10 @@
 
 <!-- HERO -->
 <section class="b-hero">
-  <div class="b-hero-bg"><img fetchpriority="high" decoding="async" src="assets/img/b-hero.webp" alt="" onerror="this.style.display='none'"></div>
+  <div class="b-hero-bg"><picture>
+    <source media="(max-width: 760px)" srcset="assets/img/b-hero-mobile.webp">
+    <img fetchpriority="high" decoding="async" width="1376" height="768" src="assets/img/b-hero.webp" alt="" onerror="this.style.display='none'">
+  </picture></div>
   <div class="b-hero-inner">
     <span class="b-eyebrow b-reveal">Dermatologie · Ästhetik · Longevity · Schwyz</span>
     <h1 class="b-reveal d1">Schöne Haut ist<br><em>kein Zufall.</em></h1>
