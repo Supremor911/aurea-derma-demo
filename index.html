@@ -8,6 +8,7 @@
 <meta name="description" content="AUREA Variante B — dunkle, editoriale Designsprache für eine Premium-Dermatologie. Konzept-Entwurf.">
   <link rel="preload" href="assets/fonts/fraunces-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/manrope-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" href="assets/favicon.svg">
 <link rel="stylesheet" href="assets/style-b.css">
 </head>
 <body>
@@ -30,7 +31,7 @@
 
 <!-- HERO -->
 <section class="b-hero">
-  <div class="b-hero-bg"><img src="assets/img/b-hero.jpg" alt="" onerror="this.style.display='none'"></div>
+  <div class="b-hero-bg"><img fetchpriority="high" decoding="async" src="assets/img/b-hero.webp" alt="" onerror="this.style.display='none'"></div>
   <div class="b-hero-inner">
     <span class="b-eyebrow b-reveal">Dermatologie · Ästhetik · Longevity · Schwyz</span>
     <h1 class="b-reveal d1">Schöne Haut ist<br><em>kein Zufall.</em></h1>
@@ -63,7 +64,7 @@
 
 <!-- FEATURE: ÄSTHETIK -->
 <section class="b-feature" id="aesthetik">
-  <div class="media b-reveal"><img src="assets/img/b-feature-1.jpg" alt="Ästhetische Medizin bei AUREA"></div>
+  <div class="media b-reveal"><img loading="lazy" decoding="async" src="assets/img/b-feature-1.webp" alt="Ästhetische Medizin bei AUREA"></div>
   <div class="txt b-reveal d1">
     <span class="b-eyebrow">Ästhetik</span>
     <h2>Natürlich. Nie gemacht.</h2>
@@ -74,7 +75,7 @@
 
 <!-- FEATURE: LONGEVITY -->
 <section class="b-feature flip" id="longevity">
-  <div class="media b-reveal"><img src="assets/img/b-feature-2.jpg" alt="Longevity und Hautgesundheit"></div>
+  <div class="media b-reveal"><img loading="lazy" decoding="async" src="assets/img/b-feature-2.webp" alt="Longevity und Hautgesundheit"></div>
   <div class="txt b-reveal d1">
     <span class="b-eyebrow">Longevity</span>
     <h2>Haut ist ein Langzeit&shy;projekt.</h2>
@@ -97,8 +98,8 @@
       <button class="ba-pill" data-case="textur">Hautbild &amp; Poren</button>
     </div>
     <div class="ba-stage b-reveal d1" id="baStage">
-      <img class="ba-after" id="baAfter" src="assets/img/ba-roetung-after.jpg" alt="Nachher">
-      <img class="ba-before" id="baBefore" src="assets/img/ba-roetung-before.jpg" alt="Vorher">
+      <img loading="lazy" decoding="async" class="ba-after" id="baAfter" src="assets/img/ba-roetung-after.webp" alt="Nachher">
+      <img loading="lazy" decoding="async" class="ba-before" id="baBefore" src="assets/img/ba-roetung-before.webp" alt="Vorher">
       <div class="ba-handle"><span class="ba-knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18-6-6 6-6M15 6l6 6-6 6"/></svg></span></div>
       <span class="ba-tag ba-tag-before">Vorher</span>
       <span class="ba-tag ba-tag-after">Nachher</span>
@@ -118,7 +119,7 @@
 <!-- DOCTOR -->
 <section class="b-section b-container" id="praxis">
   <div class="b-doctor">
-    <div class="media b-reveal"><img src="assets/img/b-doctor.jpg" alt="Dr. med. Carla Brunner"></div>
+    <div class="media b-reveal"><img loading="lazy" decoding="async" src="assets/img/b-doctor.webp" alt="Dr. med. Carla Brunner"></div>
     <div class="b-reveal d1">
       <span class="b-eyebrow">Die Praxis</span>
       <h2>Eine Ärztin, die sich Zeit nimmt.</h2>

@@ -51,8 +51,8 @@
         document.querySelectorAll('.ba-pill').forEach(function (x) { x.classList.remove('is-active'); });
         p.classList.add('is-active');
         var k = p.dataset.case;
-        before.src = 'assets/img/ba-' + k + '-before.jpg';
-        after.src = 'assets/img/ba-' + k + '-after.jpg';
+        before.src = 'assets/img/ba-' + k + '-before.webp';
+        after.src = 'assets/img/ba-' + k + '-after.webp';
         setPos(50); range.value = 50;
       });
     });
@@ -83,7 +83,7 @@
     // so ist das Umschalten zwischen den Fällen verzögerungsfrei (nicht erst beim Klick).
     var prefetchCases = function () {
       ['pigment', 'textur'].forEach(function (k) {
-        ['before', 'after'].forEach(function (s) { var im = new Image(); im.src = 'assets/img/ba-' + k + '-' + s + '.jpg'; });
+        ['before', 'after'].forEach(function (s) { var im = new Image(); im.src = 'assets/img/ba-' + k + '-' + s + '.webp'; });
       });
     };
     if ('IntersectionObserver' in window) {
