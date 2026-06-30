@@ -311,6 +311,12 @@ p, .b-lead { text-wrap: pretty; }
 .bk-day.past { opacity: 0.45; }
 .bk-day.booked { opacity: 0.5; }
 .bk-day.booked .dom { color: var(--bone-mut); }
+/* Heutiger Tag hervorgehoben (Situational Awareness) — auch wenn ausgebucht nicht gedimmt */
+.bk-day.today { opacity: 1; border-color: var(--gold); box-shadow: inset 0 0 0 1px var(--gold); }
+.bk-day.today .dom { color: var(--gold-soft); }
+.bk-today-tag { display: inline-block; font-size: 0.58rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--ink); background: var(--gold); border-radius: 100px; padding: 0.1rem 0.5rem; }
+.bk-day .bk-today-tag { margin-bottom: 0.55rem; }
 .bk-day .dow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--bone-mut); }
 .bk-day .dom { font-family: var(--serif); font-size: 1.3rem; color: var(--bone); margin: 0.15rem 0 0.7rem; }
 .bk-slot { display: block; width: 100%; padding: 0.5rem 0.2rem; margin-bottom: 0.4rem; border-radius: 7px; border: 1px solid var(--line);
@@ -458,6 +464,10 @@ p, .b-lead { text-wrap: pretty; }
   .bk-dayrow:hover:not([aria-disabled="true"]) { border-color: var(--gold); }
   .bk-dayrow.sel { border-color: var(--gold); background: rgba(205,161,94,0.10); }
   .bk-dayrow[aria-disabled="true"] { opacity: 0.42; }
+  /* Heutiger Tag: hervorgehoben und nie gedimmt (auch wenn ausgebucht) */
+  .bk-dayrow.today { opacity: 1; border-color: var(--gold); }
+  .bk-dayrow.today .dow { color: var(--gold-soft); }
+  .bk-dayrow .bk-today-tag { margin-left: 0.55rem; vertical-align: 0.06em; }
   .bk-dayrow-date { flex: 1; display: flex; align-items: baseline; gap: 0.6rem; min-width: 0; }
   .bk-dayrow .dow { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--bone-mut); flex: none; }
   .bk-dayrow .dom { font-family: var(--serif); font-size: 1.1rem; color: var(--bone); }

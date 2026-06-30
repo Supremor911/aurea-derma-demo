@@ -373,12 +373,13 @@
   // Verfügbarkeitsstufe je Tag (ohne Uhrzeiten): frei / wenige / ausgebucht / geschlossen.
   // Abgeleitet aus slotsFor(d).length – Badge und spätere Uhrzeitliste stammen also aus derselben Quelle.
   function levelFor(d) {
-    if (d.getDay() === 0 || d < FIRST_FREE) return { key: 'off', label: 'geschlossen', selectable: false, aria: 'geschlossen' };
-    var n = slotsFor(d).length;
+    if (d.getDay() === 0) return { key: 'off', label: 'geschlossen', selectable: false, aria: 'geschlossen' };
+    var n = slotsFor(d).length;                          // 0 Slots (auch laufende Woche/Vergangenheit) → ausgebucht
     if (n === 0) return { key: 'zu', label: 'ausgebucht', selectable: false, aria: 'ausgebucht' };
-    if (n <= 2) return { key: 'wenige', label: 'wenige', selectable: true, aria: 'wenige Termine frei' };
-    return { key: 'frei', label: 'frei', selectable: true, aria: 'frei' };
+    if (n <= 2) return { key: 'wenige', label: 'wenige Termine', selectable: true, aria: 'wenige Termine frei' };
+    return { key: 'frei', label: 'freie Termine', selectable: true, aria: 'freie Termine' };
   }
+  function isToday(d) { return fmt(d) === fmt(TODAY); }
   function dayLabelShort(d) { return DOW[(d.getDay() + 6) % 7] + ', ' + d.getDate() + '. ' + MON[d.getMonth()]; }
   function dayLabelFull(d) { return DOWFULL[(d.getDay() + 6) % 7] + ', ' + d.getDate() + '. ' + MON[d.getMonth()]; }
   function weekStart() { return addDays(sow(TODAY), state.weekOffset * 7); }
@@ -418,9 +419,10 @@
     var wk = document.getElementById('bkWeek'); wk.innerHTML = '';
     var hasFree = false;
     for (var i = 0; i < 6; i++) {
-      var d = addDays(ws, i), slots = slotsFor(d), booked = !slots.length; if (slots.length) hasFree = true;
-      var col = document.createElement('div'); col.className = 'bk-day' + (d < TODAY ? ' past' : '') + (booked ? ' booked' : '');
-      var h = '<div class="dow">' + DOW[i] + '</div><div class="dom">' + d.getDate() + '</div>';
+      var d = addDays(ws, i), slots = slotsFor(d), booked = !slots.length, tod = isToday(d); if (slots.length) hasFree = true;
+      var col = document.createElement('div'); col.className = 'bk-day' + (d < TODAY ? ' past' : '') + (booked ? ' booked' : '') + (tod ? ' today' : '');
+      if (tod) col.setAttribute('aria-current', 'date');
+      var h = '<div class="dow">' + DOW[i] + '</div><div class="dom">' + d.getDate() + '</div>' + (tod ? '<div class="bk-today-tag">Heute</div>' : '');
       if (booked) { h += '<div class="bk-none" title="ausgebucht">—</div>'; }
       else { slots.forEach(function (tm) { h += '<button class="bk-slot' + (state.date === fmt(d) && state.time === tm ? ' sel' : '') + '" data-d="' + fmt(d) + '" data-t="' + tm + '">' + tm + '</button>'; }); }
       col.innerHTML = h; wk.appendChild(col);
@@ -578,16 +580,17 @@
     var list = document.createElement('div'); list.className = 'bk-daylist';
     var hasFree = false;
     for (var i = 0; i < 6; i++) {
-      var d = addDays(ws, i), lv = levelFor(d), isSel = state.sheetDay === fmt(d);
+      var d = addDays(ws, i), lv = levelFor(d), isSel = state.sheetDay === fmt(d), tod = isToday(d);
       if (lv.selectable) hasFree = true;
       var b = document.createElement('button');
       b.type = 'button';
-      b.className = 'bk-dayrow bk-lvl-' + lv.key + (isSel ? ' sel' : '');
+      b.className = 'bk-dayrow bk-lvl-' + lv.key + (isSel ? ' sel' : '') + (tod ? ' today' : '');
       if (!lv.selectable) b.setAttribute('aria-disabled', 'true');
+      if (tod) b.setAttribute('aria-current', 'date');
       b.setAttribute('aria-pressed', isSel ? 'true' : 'false');
-      b.setAttribute('aria-label', dayLabelFull(d) + ', ' + lv.aria);
+      b.setAttribute('aria-label', dayLabelFull(d) + (tod ? ', heute' : '') + ', ' + lv.aria);
       b.innerHTML =
-        '<span class="bk-dayrow-date"><span class="dow">' + DOW[i] + '</span><span class="dom">' + d.getDate() + '. ' + MON[d.getMonth()] + '</span></span>' +
+        '<span class="bk-dayrow-date"><span class="dow">' + DOW[i] + '</span><span class="dom">' + d.getDate() + '. ' + MON[d.getMonth()] + '</span>' + (tod ? '<span class="bk-today-tag">Heute</span>' : '') + '</span>' +
         '<span class="bk-badge bk-badge--' + lv.key + '"><span class="dot"></span>' + lv.label + '</span>' +
         '<span class="chev">' + CHEV_R + '</span>';
       if (lv.selectable) (function (d, b) {
