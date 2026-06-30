@@ -79,12 +79,19 @@
       };
       requestAnimationFrame(frame);
     };
+    // Bilder der weiteren Fälle (Pigment, Hautbild) vorausladen, sobald der Slider in Sicht kommt —
+    // so ist das Umschalten zwischen den Fällen verzögerungsfrei (nicht erst beim Klick).
+    var prefetchCases = function () {
+      ['pigment', 'textur'].forEach(function (k) {
+        ['before', 'after'].forEach(function (s) { var im = new Image(); im.src = 'assets/img/ba-' + k + '-' + s + '.jpg'; });
+      });
+    };
     if ('IntersectionObserver' in window) {
       var hio = new IntersectionObserver(function (es) {
-        es.forEach(function (e) { if (e.isIntersecting) { setTimeout(runHint, 500); hio.unobserve(e.target); } });
+        es.forEach(function (e) { if (e.isIntersecting) { setTimeout(runHint, 500); prefetchCases(); hio.unobserve(e.target); } });
       }, { threshold: 0.55 });
       hio.observe(stage);
-    } else { setTimeout(runHint, 900); }
+    } else { setTimeout(runHint, 900); prefetchCases(); }
   }
 
   /* ---------- Service detail modal ---------- */
@@ -303,7 +310,7 @@
       document.querySelector('.bk-body').innerHTML =
         '<div class="bk-done"><div class="chk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>' +
         '<h3 style="margin-bottom:.6rem">Terminanfrage gesendet</h3>' +
-        '<p>Vielen Dank. Wir haben Ihre Anfrage für <strong style="color:var(--bone)">' + state.date + ' um ' + state.time + ' Uhr</strong> erhalten und melden uns zeitnah und diskret zur Bestätigung.</p></div>';
+        '<p>Vielen Dank. Wir haben Ihre Anfrage für den <strong style="color:var(--bone)">' + state.date + ' um ' + state.time + ' Uhr</strong> erhalten und melden uns zeitnah und diskret zur Bestätigung.</p></div>';
       document.querySelector('.bk-nav').style.display = 'none';
       stepsEl.querySelectorAll('.s').forEach(function (s) { s.classList.add('done'); });
     }

@@ -2,8 +2,8 @@
 
 **Auftraggeber:** WE FRANCHISE GmbH · Ansprechpartnerin: Ellen Müller
 **Bewerber:** Gabriel Jäger · Swiss Consult Digital · Gordola (TI)
-**Beilage:** Premium-Entwurf – Startseite + Longevity-Anamnese-Seite, bereits umgesetzt als **lauffähiges WordPress-Block-Theme** (zwei Designvarianten)
-**Live-Demo (klickbar):** https://swissconsultdigital.github.io/aurea-derma-demo/varianten.html
+**Beilage:** Premium-Entwurf – Startseite + Longevity-Anamnese-Seite, bereits umgesetzt als **lauffähiges WordPress-Block-Theme** („Noir Editorial")
+**Live-Demo (klickbar):** https://swissconsultdigital.github.io/aurea-derma-demo/
 
 > ✅ **Sendefertig:** Verfügbarkeit, Kontaktdaten, Referenzen und Live-Demo sind eingetragen.
 > Optional noch: bestehende Bewerbungs-PDFs (CV/Projektliste/Zertifikate) anhängen.
@@ -103,7 +103,7 @@ Die Ausschreibung verlangt eine für nicht-technische Personen bedienbare Lösun
 
 - **Verfügbarkeit:** Einstieg **nach Absprache** (der geplante Projektstart im Juli 2026 passt gut), Kapazität **bis 15 Stunden pro Woche**; erste Phase (Hauptwebsite + Longevity-Anamnese-Seite) zeitnah umsetzbar.
 - **Honorar:** Richtwert rund **CHF 110/h** auf Schweizer Freelancer-Niveau; für klar definierte Phasen gerne ein faires **Pauschalangebot** – beides verhandelbar.
-- **Referenzen / Arbeitsprobe:** Als sofortige, projektspezifische Arbeitsprobe dient der eigens für diese Ausschreibung erstellte Premium-Entwurf inkl. Longevity-Anamnese-Seite – bereits als lauffähiges WordPress-Block-Theme umgesetzt. **Klickbare Live-Demo (beide Designrichtungen): [swissconsultdigital.github.io/aurea-derma-demo](https://swissconsultdigital.github.io/aurea-derma-demo/varianten.html)**. Dazu zwei **real ausgelieferte Websites aus meiner Hand**:
+- **Referenzen / Arbeitsprobe:** Als sofortige, projektspezifische Arbeitsprobe dient der eigens für diese Ausschreibung erstellte Premium-Entwurf inkl. Longevity-Anamnese-Seite – bereits als lauffähiges WordPress-Block-Theme umgesetzt. **Klickbare Live-Demo: [swissconsultdigital.github.io/aurea-derma-demo](https://swissconsultdigital.github.io/aurea-derma-demo/)**. Dazu zwei **real ausgelieferte Websites aus meiner Hand**:
   - **[gi-solutions.ch](https://gi-solutions.ch/)** — Website für ein internationales Industrieunternehmen (Metallbearbeitung; Standorte u. a. in der Schweiz), umgesetzt mit **WordPress und dem Page-Builder Divi**, mehrsprachig (DE/EN/Mne), in premium-industrieller Anmutung. Belegt genau den geforderten Stack: WordPress mit Page-Builder, sauber strukturiert und mehrsprachig.
   - **[aktedigital.de](https://aktedigital.de/)** — Website eines Digitalisierungs-/Scanservice mit ausgeprägtem **Datenschutz-Fokus** (DSGVO, BSI TR-RESISCAN, DIN 66399) und **conversion-orientierter** Gestaltung (Vertrauenskennzahlen, segmentierte Lösungen, Kundenstimmen u. a. aus der Medizintechnik, klarer 5-Schritt-Prozess, Lead-Strecke). Belegt genau die zwei Dinge, die für eine Arztpraxis zählen: sorgfältiger Umgang mit Datenschutz und eine Gestaltung, die zu Anfragen führt.
 
