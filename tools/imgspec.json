@@ -1,0 +1,74 @@
+{
+  "images": [
+    {
+      "slot": "hero",
+      "filename": "hero.jpg",
+      "aspect": "16:9",
+      "prompt": "Wide editorial interior photograph of a serene, light-flooded premium dermatology and longevity clinic reception lounge. Warm ivory plaster walls, pale oak and travertine surfaces, a sculptural sage-green velvet bench, slim brushed-gold accents, and a low marble side table holding a single white orchid and softly rolled linen towels. Floor-to-ceiling sheer linen curtains diffuse soft morning daylight across the room, casting gentle elongated shadows and a calm glow. Abundant negative space, minimal styling, quiet refined luxury. Photorealistic medium-format photography, shallow depth of field, natural color grade in ivory, champagne, sage green and muted forest tones with delicate gold highlights. Spa-like, warm, trustworthy, architectural-digest editorial aesthetic, absolutely not cold or clinical.",
+      "negativePrompt": "text, letters, words, logos, watermark, signature, distorted anatomy, extra fingers, plastic skin, harsh clinical lighting, oversaturated, low quality, blurry"
+    },
+    {
+      "slot": "leistung-medizin",
+      "filename": "leistung-medizin.jpg",
+      "aspect": "4:3",
+      "prompt": "Refined editorial photograph evoking gentle medical dermatology care: a calm consultation moment in a warm ivory treatment room, a physician's clean, well-groomed hands carefully examining the healthy skin of a patient's forearm with an elegant wooden-handled magnifying loupe, no harsh devices visible. Realistic, healthy natural skin texture with visible pores, no plastic look. Soft diffused daylight from a side window, warm champagne and sage palette, brushed-gold and pale-oak accents, generous negative space. Photorealistic medium-format photography, shallow depth of field, serene and reassuring premium medical aesthetic, warm and human, not clinical.",
+      "negativePrompt": "text, letters, words, logos, watermark, signature, distorted anatomy, extra fingers, plastic skin, harsh clinical lighting, oversaturated, low quality, blurry"
+    },
+    {
+      "slot": "leistung-aesthetik",
+      "filename": "leistung-aesthetik.jpg",
+      "aspect": "4:3",
+      "prompt": "Elegant editorial close-up suggesting aesthetic medicine and facial rejuvenation: a relaxed woman in her late forties reclining on a pale linen treatment couch, eyes softly closed, flawless natural skin with a healthy glow, a gloved practitioner's hand resting lightly near her cheek with no visible needles or devices. Soft golden morning light, warm ivory and champagne tones, a folded sage-green towel and a single stem of greenery nearby. Calm, dignified, discreet mood. Photorealistic medium-format photography, shallow depth of field, smooth but real skin texture with pores, premium spa atmosphere, generous negative space, refined and warm, never clinical.",
+      "negativePrompt": "text, letters, words, logos, watermark, signature, distorted anatomy, extra fingers, plastic skin, harsh clinical lighting, oversaturated, low quality, blurry"
+    },
+    {
+      "slot": "leistung-hautkrebs",
+      "filename": "leistung-hautkrebs.jpg",
+      "aspect": "4:3",
+      "prompt": "Refined editorial image representing professional skin-cancer screening and mole checks: a physician in a soft ivory coat using an elegant handheld dermatoscope to examine the skin of a patient's shoulder, focused and caring demeanour, healthy realistic skin texture. Background a warm, softly blurred consultation room in sage and ivory with pale oak. Diffused natural daylight, champagne and forest-green palette with brushed-gold accents, calm and trustworthy mood, plenty of negative space. Photorealistic medium-format photography, shallow depth of field, precise yet warm and human, premium preventive-care aesthetic, not cold or clinical.",
+      "negativePrompt": "text, letters, words, logos, watermark, signature, distorted anatomy, extra fingers, plastic skin, harsh clinical lighting, oversaturated, low quality, blurry"
+    },
+    {
+      "slot": "leistung-laser",
+      "filename": "leistung-laser.jpg",
+      "aspect": "4:3",
+      "prompt": "Sophisticated editorial photograph evoking gentle laser and light skin treatment: a serene woman lying on a pale linen couch wearing slim protective eye covers, a sleek minimalist treatment handpiece held near her cheek emitting a soft warm glow, her face calm and relaxed with healthy natural skin. Warm low-key ambient lighting blended with soft daylight, ivory, champagne and sage tones, subtle gold reflections, a deep muted forest-green background for elegant contrast. Photorealistic medium-format photography, shallow depth of field, refined and discreet, advanced yet reassuring premium aesthetic, generous negative space, never harsh or clinical.",
+      "negativePrompt": "text, letters, words, logos, watermark, signature, distorted anatomy, extra fingers, plastic skin, harsh clinical lighting, oversaturated, low quality, blurry"
+    },
+    {
+      "slot": "leistung-longevity",
+      "filename": "leistung-longevity.jpg",
+      "aspect": "4:3",
+      "prompt": "Editorial conceptual still life for longevity and skin-health science: a beautifully styled arrangement on a warm travertine surface combining a few minimalist amber-glass serum bottles, a slim glass vial, fresh green botanical sprigs, a coiled cloth measuring tape and a softly lit shallow bowl of water with delicate light reflections, symbolising prevention and vitality. Soft diffused daylight, warm ivory backdrop, champagne, sage-green and gold palette, abundant negative space. Photorealistic medium-format photography, shallow depth of field, clean and quietly scientific yet warm and natural, premium wellness editorial aesthetic, not clinical or sterile.",
+      "negativePrompt": "text, letters, words, logos, watermark, signature, distorted anatomy, extra fingers, plastic skin, harsh clinical lighting, oversaturated, low quality, blurry"
+    },
+    {
+      "slot": "leistung-beratung",
+      "filename": "leistung-beratung.jpg",
+      "aspect": "4:3",
+      "prompt": "Warm editorial photograph of a premium private medical consultation: a physician and a client seated across a pale oak table in a bright ivory office, engaged in calm, attentive conversation, soft open body language conveying trust, no documents or screens emphasised. Sage-green upholstered chairs, a small vase of eucalyptus, brushed-gold details, and floor-to-ceiling sheer curtains diffusing soft daylight. Warm ivory, champagne and forest-green palette, generous negative space. Photorealistic medium-format photography, shallow depth of field, serene, discreet and human, quiet-luxury aesthetic, reassuring and warm, not corporate or clinical.",
+      "negativePrompt": "text, letters, words, logos, watermark, signature, distorted anatomy, extra fingers, plastic skin, harsh clinical lighting, oversaturated, low quality, blurry"
+    },
+    {
+      "slot": "doctor-portrait",
+      "filename": "portrait.jpg",
+      "aspect": "3:4",
+      "prompt": "Professional editorial portrait of a generic fictional female physician, a dermatologist in her early forties, approachable and confident with a warm subtle smile, natural healthy skin and minimal makeup, shoulder-length soft brown hair, wearing an elegant ivory blouse under a softly tailored coat. Generic fictional person, not a real identifiable individual, no resemblance to any real person. She stands in a bright airy consultation room with a softly blurred sage-and-ivory background, sheer curtains and pale oak. Soft flattering natural window light, warm champagne and forest-green palette with gold accents. Photorealistic medium-format portrait, shallow depth of field, three-quarter framing, trustworthy, calm and personable, premium editorial aesthetic, not clinical.",
+      "negativePrompt": "text, letters, words, logos, watermark, signature, distorted anatomy, extra fingers, plastic skin, harsh clinical lighting, oversaturated, low quality, blurry"
+    },
+    {
+      "slot": "longevity-hero",
+      "filename": "longevity-hero.jpg",
+      "aspect": "16:9",
+      "prompt": "Wide cinematic editorial photograph for a longevity and skin-health philosophy: a poised, healthy woman in her mid-fifties standing near a large window in a serene ivory interior, gazing calmly outward with luminous natural skin and graceful confidence, wearing soft neutral knitwear. Lush soft daylight floods the space through sheer linen curtains, with a few green botanical branches, pale oak and travertine surfaces and brushed-gold accents. Warm ivory, champagne, sage-green and muted forest palette, with generous negative space on one side for text. Photorealistic medium-format photography, shallow depth of field, aspirational yet calm, radiating vitality and wellbeing, premium editorial aesthetic, warm and human, not clinical.",
+      "negativePrompt": "text, letters, words, logos, watermark, signature, distorted anatomy, extra fingers, plastic skin, harsh clinical lighting, oversaturated, low quality, blurry"
+    },
+    {
+      "slot": "ambient-1",
+      "filename": "ambient-1.jpg",
+      "aspect": "1:1",
+      "prompt": "Intimate editorial macro still life as a textural accent: a restrained composition of natural materials on a warm ivory background, including folded raw linen fabric, a piece of veined travertine or pale marble, a fresh sprig of sage or eucalyptus, and one minimalist frosted-glass skincare bottle with a brushed-gold cap. Soft directional morning daylight grazes the surfaces to reveal fine texture and gentle shadows. Warm ivory, champagne, sage-green and gold palette, generous negative space. Photorealistic medium-format macro photography, shallow depth of field, tactile, calm and luxurious, botanical and material detail, premium editorial aesthetic, not clinical.",
+      "negativePrompt": "text, letters, words, logos, watermark, signature, distorted anatomy, extra fingers, plastic skin, harsh clinical lighting, oversaturated, low quality, blurry"
+    }
+  ]
+}

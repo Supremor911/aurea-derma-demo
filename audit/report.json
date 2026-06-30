@@ -1,0 +1,3146 @@
+{
+  "index.html": {
+    "viewports": {
+      "mobile-sm": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "brand",
+            "w": 241,
+            "h": 42,
+            "control": false,
+            "t": "AUREA\n    Dermatologie"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 264,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 264,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 264,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 264,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 264,
+            "h": 25,
+            "control": false,
+            "t": "Zur Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 264,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 36,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 36,
+            "control": false,
+            "t": "Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 36,
+            "control": false,
+            "t": "Über die Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 36,
+            "control": false,
+            "t": "Ablauf"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 36,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 140,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutzerklärung"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 26,
+            "h": 18,
+            "control": false,
+            "t": "AGB"
+          }
+        ]
+      },
+      "mobile": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "brand",
+            "w": 241,
+            "h": 42,
+            "control": false,
+            "t": "AUREA\n    Dermatologie"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 294,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 294,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 294,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 294,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 294,
+            "h": 25,
+            "control": false,
+            "t": "Zur Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 294,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 36,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 36,
+            "control": false,
+            "t": "Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 36,
+            "control": false,
+            "t": "Über die Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 36,
+            "control": false,
+            "t": "Ablauf"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 36,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 140,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutzerklärung"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 26,
+            "h": 18,
+            "control": false,
+            "t": "AGB"
+          }
+        ]
+      },
+      "tablet": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "brand",
+            "w": 241,
+            "h": 42,
+            "control": false,
+            "t": "AUREA\n    Dermatologie"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 287,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 287,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 287,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 287,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 287,
+            "h": 25,
+            "control": false,
+            "t": "Zur Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 287,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 36,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 36,
+            "control": false,
+            "t": "Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 36,
+            "control": false,
+            "t": "Über die Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 36,
+            "control": false,
+            "t": "Ablauf"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 36,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 140,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutzerklärung"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 26,
+            "h": 18,
+            "control": false,
+            "t": "AGB"
+          }
+        ]
+      },
+      "desktop": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "brand",
+            "w": 241,
+            "h": 42,
+            "control": false,
+            "t": "AUREA\n    Dermatologie"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 78,
+            "h": 24,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 68,
+            "h": 24,
+            "control": false,
+            "t": "Longevity"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 42,
+            "h": 24,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 24,
+            "control": false,
+            "t": "Ablauf"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 54,
+            "h": 24,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 298,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 298,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 298,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 298,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 298,
+            "h": 25,
+            "control": false,
+            "t": "Zur Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 298,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 258,
+            "h": 36,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 258,
+            "h": 36,
+            "control": false,
+            "t": "Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 258,
+            "h": 36,
+            "control": false,
+            "t": "Über die Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 258,
+            "h": 36,
+            "control": false,
+            "t": "Ablauf"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 258,
+            "h": 36,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 140,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutzerklärung"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 26,
+            "h": 18,
+            "control": false,
+            "t": "AGB"
+          }
+        ]
+      },
+      "wide": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "brand",
+            "w": 241,
+            "h": 42,
+            "control": false,
+            "t": "AUREA\n    Dermatologie"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 78,
+            "h": 24,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 68,
+            "h": 24,
+            "control": false,
+            "t": "Longevity"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 42,
+            "h": 24,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 24,
+            "control": false,
+            "t": "Ablauf"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 54,
+            "h": 24,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 298,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 298,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 298,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 298,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 298,
+            "h": 25,
+            "control": false,
+            "t": "Zur Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "link-arrow",
+            "w": 298,
+            "h": 25,
+            "control": false,
+            "t": "Mehr erfahren"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 254,
+            "h": 36,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 254,
+            "h": 36,
+            "control": false,
+            "t": "Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 254,
+            "h": 36,
+            "control": false,
+            "t": "Über die Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 254,
+            "h": 36,
+            "control": false,
+            "t": "Ablauf"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 254,
+            "h": 36,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 140,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutzerklärung"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 26,
+            "h": 18,
+            "control": false,
+            "t": "AGB"
+          }
+        ]
+      }
+    },
+    "contrast": [],
+    "overImg": [
+      {
+        "t": "Ihre Hautgesundheit verdient Zeit, Sorgf",
+        "tag": "h1",
+        "cls": "reveal d1 in"
+      },
+      {
+        "t": "In der AUREA Praxis verbinden wir medizi",
+        "tag": "p",
+        "cls": "lead reveal d2 in"
+      },
+      {
+        "t": "Termin anfragen",
+        "tag": "a",
+        "cls": "btn btn-primary"
+      },
+      {
+        "t": "Leistungen entdecken",
+        "tag": "a",
+        "cls": "btn btn-outline-light"
+      },
+      {
+        "t": "Fachärztin für Dermatologie FMH",
+        "tag": "li",
+        "cls": ""
+      },
+      {
+        "t": "Über 15 Jahre Erfahrung",
+        "tag": "li",
+        "cls": ""
+      },
+      {
+        "t": "Diskret & persönlich",
+        "tag": "li",
+        "cls": ""
+      },
+      {
+        "t": "Premium-Praxis in Schwyz",
+        "tag": "li",
+        "cls": ""
+      },
+      {
+        "t": "Dermatologie · Ästhetik · Longevity · Sc",
+        "tag": "span",
+        "cls": "eyebrow reveal in"
+      },
+      {
+        "t": "Entdecken",
+        "tag": "span",
+        "cls": ""
+      }
+    ],
+    "tiny": []
+  },
+  "longevity.html": {
+    "viewports": {
+      "mobile-sm": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "brand",
+            "w": 241,
+            "h": 42,
+            "control": false,
+            "t": "AUREA\n    Dermatologie"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 31,
+            "h": 18,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 36,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 36,
+            "control": false,
+            "t": "Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 36,
+            "control": false,
+            "t": "Über die Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 36,
+            "control": false,
+            "t": "Ablauf"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 36,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 140,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutzerklärung"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 26,
+            "h": 18,
+            "control": false,
+            "t": "AGB"
+          }
+        ]
+      },
+      "mobile": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "brand",
+            "w": 241,
+            "h": 42,
+            "control": false,
+            "t": "AUREA\n    Dermatologie"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 31,
+            "h": 18,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 36,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 36,
+            "control": false,
+            "t": "Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 36,
+            "control": false,
+            "t": "Über die Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 36,
+            "control": false,
+            "t": "Ablauf"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 36,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 140,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutzerklärung"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 26,
+            "h": 18,
+            "control": false,
+            "t": "AGB"
+          }
+        ]
+      },
+      "tablet": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "brand",
+            "w": 241,
+            "h": 42,
+            "control": false,
+            "t": "AUREA\n    Dermatologie"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 31,
+            "h": 18,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 36,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 36,
+            "control": false,
+            "t": "Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 36,
+            "control": false,
+            "t": "Über die Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 36,
+            "control": false,
+            "t": "Ablauf"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 36,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 140,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutzerklärung"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 26,
+            "h": 18,
+            "control": false,
+            "t": "AGB"
+          }
+        ]
+      },
+      "desktop": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "brand",
+            "w": 241,
+            "h": 42,
+            "control": false,
+            "t": "AUREA\n    Dermatologie"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 78,
+            "h": 24,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 68,
+            "h": 24,
+            "control": false,
+            "t": "Longevity"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 42,
+            "h": 24,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 24,
+            "control": false,
+            "t": "Ablauf"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 54,
+            "h": 24,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 31,
+            "h": 18,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 258,
+            "h": 36,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 258,
+            "h": 36,
+            "control": false,
+            "t": "Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 258,
+            "h": 36,
+            "control": false,
+            "t": "Über die Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 258,
+            "h": 36,
+            "control": false,
+            "t": "Ablauf"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 258,
+            "h": 36,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 140,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutzerklärung"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 26,
+            "h": 18,
+            "control": false,
+            "t": "AGB"
+          }
+        ]
+      },
+      "wide": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "brand",
+            "w": 241,
+            "h": 42,
+            "control": false,
+            "t": "AUREA\n    Dermatologie"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 78,
+            "h": 24,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 68,
+            "h": 24,
+            "control": false,
+            "t": "Longevity"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 42,
+            "h": 24,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 24,
+            "control": false,
+            "t": "Ablauf"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 54,
+            "h": 24,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 31,
+            "h": 18,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 254,
+            "h": 36,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 254,
+            "h": 36,
+            "control": false,
+            "t": "Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 254,
+            "h": 36,
+            "control": false,
+            "t": "Über die Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 254,
+            "h": 36,
+            "control": false,
+            "t": "Ablauf"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 254,
+            "h": 36,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 140,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutzerklärung"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 26,
+            "h": 18,
+            "control": false,
+            "t": "AGB"
+          }
+        ]
+      }
+    },
+    "contrast": [],
+    "overImg": [],
+    "tiny": []
+  },
+  "varianten.html": {
+    "viewports": {
+      "mobile-sm": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": []
+      },
+      "mobile": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "brand",
+            "w": 241,
+            "h": 42,
+            "control": false,
+            "t": "AUREADermatologie & Lo"
+          },
+          {
+            "tag": "a",
+            "cls": "back",
+            "w": 103,
+            "h": 24,
+            "control": false,
+            "t": "Zur Website"
+          }
+        ]
+      },
+      "tablet": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "brand",
+            "w": 241,
+            "h": 42,
+            "control": false,
+            "t": "AUREADermatologie & Lo"
+          },
+          {
+            "tag": "a",
+            "cls": "back",
+            "w": 103,
+            "h": 24,
+            "control": false,
+            "t": "Zur Website"
+          }
+        ]
+      },
+      "desktop": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "brand",
+            "w": 241,
+            "h": 42,
+            "control": false,
+            "t": "AUREADermatologie & Lo"
+          },
+          {
+            "tag": "a",
+            "cls": "back",
+            "w": 103,
+            "h": 24,
+            "control": false,
+            "t": "Zur Website"
+          }
+        ]
+      },
+      "wide": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "brand",
+            "w": 241,
+            "h": 42,
+            "control": false,
+            "t": "AUREADermatologie & Lo"
+          },
+          {
+            "tag": "a",
+            "cls": "back",
+            "w": 103,
+            "h": 24,
+            "control": false,
+            "t": "Zur Website"
+          }
+        ]
+      }
+    },
+    "contrast": [],
+    "overImg": [],
+    "tiny": []
+  },
+  "variante-b.html": {
+    "viewports": {
+      "mobile-sm": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "b-link",
+            "w": 280,
+            "h": 42,
+            "control": false,
+            "t": "Longevity-Anamnese ent"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 35,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 35,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 35,
+            "control": false,
+            "t": "Longevity"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 35,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 131,
+            "h": 18,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 191,
+            "h": 39,
+            "control": false,
+            "t": "zur Übersicht"
+          }
+        ]
+      },
+      "mobile": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "b-link",
+            "w": 289,
+            "h": 21,
+            "control": false,
+            "t": "Longevity-Anamnese ent"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 35,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 35,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 35,
+            "control": false,
+            "t": "Longevity"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 35,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 131,
+            "h": 18,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 79,
+            "h": 18,
+            "control": false,
+            "t": "zur Übersicht"
+          }
+        ]
+      },
+      "tablet": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "b-link",
+            "w": 289,
+            "h": 21,
+            "control": false,
+            "t": "Longevity-Anamnese ent"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 35,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 35,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 35,
+            "control": false,
+            "t": "Longevity"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 35,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 131,
+            "h": 18,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 79,
+            "h": 18,
+            "control": false,
+            "t": "zur Übersicht"
+          }
+        ]
+      },
+      "desktop": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 94,
+            "h": 21,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 73,
+            "h": 21,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 84,
+            "h": 21,
+            "control": false,
+            "t": "Longevity"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 55,
+            "h": 21,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 21,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "b-link",
+            "w": 289,
+            "h": 21,
+            "control": false,
+            "t": "Longevity-Anamnese ent"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 269,
+            "h": 35,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 269,
+            "h": 35,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 269,
+            "h": 35,
+            "control": false,
+            "t": "Longevity"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 269,
+            "h": 35,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 131,
+            "h": 18,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 79,
+            "h": 18,
+            "control": false,
+            "t": "zur Übersicht"
+          }
+        ]
+      },
+      "wide": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 94,
+            "h": 21,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 73,
+            "h": 21,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 84,
+            "h": 21,
+            "control": false,
+            "t": "Longevity"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 55,
+            "h": 21,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 21,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "b-link",
+            "w": 289,
+            "h": 21,
+            "control": false,
+            "t": "Longevity-Anamnese ent"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 266,
+            "h": 35,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 266,
+            "h": 35,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 266,
+            "h": 35,
+            "control": false,
+            "t": "Longevity"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 266,
+            "h": 35,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 131,
+            "h": 18,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 79,
+            "h": 18,
+            "control": false,
+            "t": "zur Übersicht"
+          }
+        ]
+      }
+    },
+    "contrast": [],
+    "overImg": [],
+    "tiny": [
+      {
+        "t": "Vorher",
+        "size": 10.6,
+        "cls": "ba-tag ba-tag-before"
+      },
+      {
+        "t": "Nachher",
+        "size": 10.6,
+        "cls": "ba-tag ba-tag-after"
+      }
+    ]
+  },
+  "longevity-b.html": {
+    "viewports": {
+      "mobile-sm": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 17,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 160,
+            "h": 22,
+            "control": false,
+            "t": "Datenschutzerklärung"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 35,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 35,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 35,
+            "control": false,
+            "t": "Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 320,
+            "h": 35,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 131,
+            "h": 18,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 79,
+            "h": 18,
+            "control": false,
+            "t": "zur Übersicht"
+          }
+        ]
+      },
+      "mobile": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 17,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 160,
+            "h": 22,
+            "control": false,
+            "t": "Datenschutzerklärung"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 35,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 35,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 35,
+            "control": false,
+            "t": "Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 350,
+            "h": 35,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 131,
+            "h": 18,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 79,
+            "h": 18,
+            "control": false,
+            "t": "zur Übersicht"
+          }
+        ]
+      },
+      "tablet": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 17,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 160,
+            "h": 22,
+            "control": false,
+            "t": "Datenschutzerklärung"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 35,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 35,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 35,
+            "control": false,
+            "t": "Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 337,
+            "h": 35,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 131,
+            "h": 18,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 79,
+            "h": 18,
+            "control": false,
+            "t": "zur Übersicht"
+          }
+        ]
+      },
+      "desktop": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 94,
+            "h": 21,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 73,
+            "h": 21,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 84,
+            "h": 21,
+            "control": false,
+            "t": "Longevity"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 55,
+            "h": 21,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 21,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 17,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 160,
+            "h": 22,
+            "control": false,
+            "t": "Datenschutzerklärung"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 269,
+            "h": 35,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 269,
+            "h": 35,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 269,
+            "h": 35,
+            "control": false,
+            "t": "Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 269,
+            "h": 35,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 131,
+            "h": 18,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 79,
+            "h": 18,
+            "control": false,
+            "t": "zur Übersicht"
+          }
+        ]
+      },
+      "wide": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 94,
+            "h": 21,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 73,
+            "h": 21,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 84,
+            "h": 21,
+            "control": false,
+            "t": "Longevity"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 55,
+            "h": 21,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 21,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 17,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 160,
+            "h": 22,
+            "control": false,
+            "t": "Datenschutzerklärung"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 266,
+            "h": 35,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 266,
+            "h": 35,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 266,
+            "h": 35,
+            "control": false,
+            "t": "Longevity-Anamnese"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 266,
+            "h": 35,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 131,
+            "h": 18,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 79,
+            "h": 18,
+            "control": false,
+            "t": "zur Übersicht"
+          }
+        ]
+      }
+    },
+    "contrast": [],
+    "overImg": [],
+    "tiny": []
+  },
+  "datenschutz-b.html": {
+    "viewports": {
+      "mobile-sm": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 17,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 174,
+            "h": 22,
+            "control": false,
+            "t": "praxis@aurea-derma.ch"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 74,
+            "h": 18,
+            "control": false,
+            "t": "Zur Website"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 258,
+            "h": 40,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          }
+        ]
+      },
+      "mobile": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 17,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 174,
+            "h": 22,
+            "control": false,
+            "t": "praxis@aurea-derma.ch"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 74,
+            "h": 18,
+            "control": false,
+            "t": "Zur Website"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 258,
+            "h": 40,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          }
+        ]
+      },
+      "tablet": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 17,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 174,
+            "h": 22,
+            "control": false,
+            "t": "praxis@aurea-derma.ch"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 74,
+            "h": 18,
+            "control": false,
+            "t": "Zur Website"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 131,
+            "h": 18,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          }
+        ]
+      },
+      "desktop": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 94,
+            "h": 21,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 73,
+            "h": 21,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 84,
+            "h": 21,
+            "control": false,
+            "t": "Longevity"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 55,
+            "h": 21,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 21,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 17,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 174,
+            "h": 22,
+            "control": false,
+            "t": "praxis@aurea-derma.ch"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 74,
+            "h": 18,
+            "control": false,
+            "t": "Zur Website"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 131,
+            "h": 18,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          }
+        ]
+      },
+      "wide": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 94,
+            "h": 21,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 73,
+            "h": 21,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 84,
+            "h": 21,
+            "control": false,
+            "t": "Longevity"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 55,
+            "h": 21,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 21,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 17,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 174,
+            "h": 22,
+            "control": false,
+            "t": "praxis@aurea-derma.ch"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 74,
+            "h": 18,
+            "control": false,
+            "t": "Zur Website"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 131,
+            "h": 18,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          }
+        ]
+      }
+    },
+    "contrast": [],
+    "overImg": [],
+    "tiny": []
+  },
+  "impressum-b.html": {
+    "viewports": {
+      "mobile-sm": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 17,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 174,
+            "h": 22,
+            "control": false,
+            "t": "praxis@aurea-derma.ch"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 216,
+            "h": 22,
+            "control": false,
+            "t": "office@swissconsultdig"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 74,
+            "h": 18,
+            "control": false,
+            "t": "Zur Website"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 258,
+            "h": 40,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          }
+        ]
+      },
+      "mobile": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 17,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 174,
+            "h": 22,
+            "control": false,
+            "t": "praxis@aurea-derma.ch"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 216,
+            "h": 22,
+            "control": false,
+            "t": "office@swissconsultdig"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 74,
+            "h": 18,
+            "control": false,
+            "t": "Zur Website"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 258,
+            "h": 40,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          }
+        ]
+      },
+      "tablet": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 17,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 174,
+            "h": 22,
+            "control": false,
+            "t": "praxis@aurea-derma.ch"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 216,
+            "h": 22,
+            "control": false,
+            "t": "office@swissconsultdig"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 74,
+            "h": 18,
+            "control": false,
+            "t": "Zur Website"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 131,
+            "h": 18,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          }
+        ]
+      },
+      "desktop": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 94,
+            "h": 21,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 73,
+            "h": 21,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 84,
+            "h": 21,
+            "control": false,
+            "t": "Longevity"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 55,
+            "h": 21,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 21,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 17,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 174,
+            "h": 22,
+            "control": false,
+            "t": "praxis@aurea-derma.ch"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 216,
+            "h": 22,
+            "control": false,
+            "t": "office@swissconsultdig"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 74,
+            "h": 18,
+            "control": false,
+            "t": "Zur Website"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 131,
+            "h": 18,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          }
+        ]
+      },
+      "wide": {
+        "overflowX": 0,
+        "offenders": [],
+        "small": [
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 94,
+            "h": 21,
+            "control": false,
+            "t": "Leistungen"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 73,
+            "h": 21,
+            "control": false,
+            "t": "Ästhetik"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 84,
+            "h": 21,
+            "control": false,
+            "t": "Longevity"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 55,
+            "h": 21,
+            "control": false,
+            "t": "Praxis"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 21,
+            "control": false,
+            "t": "Kontakt"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 45,
+            "h": 17,
+            "control": false,
+            "t": "Start"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 174,
+            "h": 22,
+            "control": false,
+            "t": "praxis@aurea-derma.ch"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 216,
+            "h": 22,
+            "control": false,
+            "t": "office@swissconsultdig"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 69,
+            "h": 18,
+            "control": false,
+            "t": "Impressum"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 80,
+            "h": 18,
+            "control": false,
+            "t": "Datenschutz"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 74,
+            "h": 18,
+            "control": false,
+            "t": "Zur Website"
+          },
+          {
+            "tag": "a",
+            "cls": "",
+            "w": 131,
+            "h": 18,
+            "control": false,
+            "t": "↑ Variantenübersicht"
+          }
+        ]
+      }
+    },
+    "contrast": [],
+    "overImg": [],
+    "tiny": []
+  }
+}

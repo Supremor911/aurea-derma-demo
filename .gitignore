@@ -1,0 +1,13 @@
+# Schwere Arbeits-/Zwischenartefakte (regenerierbar)
+screenshots/
+audit/**/*.png
+audit/**/*.jpg
+audit/**/*.jpeg
+audit/**/*.webp
+
+# OS / Editor / Tooling
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+.env
