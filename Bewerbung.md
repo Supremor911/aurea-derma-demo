@@ -90,6 +90,8 @@ Die Ausschreibung verlangt eine für nicht-technische Personen bedienbare Lösun
 
 ## 5 · Performance-Konzept (Kurz)
 
+**Gemessen, nicht nur versprochen** (Lighthouse auf der Live-Demo): **Desktop Performance 100** (LCP 0,5 s · CLS 0), **Mobile Performance 94** (LCP 2,4 s · CLS 0) – durchgängig im grünen Bereich, **Layout-Shift = 0**. Erreicht durch lokal gehostete Schriften, WebP-Bilder, Lazy-Loading, `fetchpriority` auf dem Hero und gesetzte `aspect-ratio`. So sieht die Disziplin aus, die ich auch in den produktiven Build bringe:
+
 - **Core Web Vitals** (LCP, CLS, INP) als verbindliche Zielvorgabe, in Lighthouse/PageSpeed im grünen Bereich.
 - **Server- und Seiten-Caching** (Performance-Plugin) und, wo sinnvoll, CDN für statische Inhalte.
 - **Bildoptimierung** mit modernen Formaten (WebP/AVIF), responsiven Grössen, Komprimierung – bei bildlastiger Premium-Ästhetik besonders wichtig.
