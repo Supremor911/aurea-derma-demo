@@ -54,9 +54,9 @@ Technisch empfehle ich den nativen WordPress-Block-Editor (lizenzfrei, laienpfle
 
 Mein Hintergrund ist Senior-Engineering in regulierten Umfeldern wie Pharma und GMP. Entsprechend diszipliniert gehe ich mit sensiblen Gesundheitsdaten um (DSG/DSGVO). Als Beleg zwei real ausgelieferte Referenzen: gi-solutions.ch (WordPress/Divi, mehrsprachig) und aktedigital.de (Datenschutz/Conversion).
 
-Ich bin in Gordola (TI) ansässig, Deutsch-Muttersprachler und arbeite zu 100% remote, bis 15 Stunden pro Woche. Der Start im Juli 2026 passt gut. Als Richtwert nenne ich rund CHF 110/h oder eine Pauschale, verhandelbar.
+Ich bin in Gordola (TI) ansässig und Deutsch-Muttersprachler, mit einer Kapazität von bis zu 15 Stunden pro Woche. Der Start im Juli 2026 passt gut. Als Richtwert nenne ich rund CHF 110/h oder eine Pauschale, verhandelbar.
 
-Gerne stelle ich Ihnen den Entwurf kurz vor; 15 Minuten genügen. Sagen Sie mir einfach einen passenden Termin.
+Gerne stelle ich Ihnen den Entwurf in einem kurzen persönlichen Gespräch vor — vor Ort in Schwyz oder per Video, ganz wie es Ihnen passt. 15 Minuten genügen; sagen Sie mir einfach einen Termin.
 
 Freundliche Grüsse
 Gabriel Jäger
