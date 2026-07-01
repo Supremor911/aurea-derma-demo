@@ -30,7 +30,7 @@ Ich bin in der Schweiz ansässig (Gordola, TI), Deutsch ist meine Muttersprache,
 Am liebsten zeige ich Ihnen den Entwurf direkt: In rund 15 Minuten gehe ich mit Ihnen durch die Startseite und die Anamnese-Seite. Sagen Sie mir einfach, wann es Ihnen passt.
 
 Freundliche Grüsse
-Gabriel Jäger
+Gabriel Jäger, M.Sc.
 Swiss Consult Digital, Gordola (TI)
 Tel. +41 79 352 35 02 · office@swissconsultdigital.ch
 
@@ -59,7 +59,7 @@ Ich bin in Gordola (TI) ansässig und Deutsch-Muttersprachler, mit einer Kapazit
 Gerne stelle ich Ihnen den Entwurf in einem kurzen persönlichen Gespräch vor — vor Ort in Schwyz oder per Video, ganz wie es Ihnen passt. 15 Minuten genügen; sagen Sie mir einfach einen Termin.
 
 Freundliche Grüsse
-Gabriel Jäger
+Gabriel Jäger, M.Sc.
 Swiss Consult Digital, Gordola (TI)
 Tel. +41 79 352 35 02
 office@swissconsultdigital.ch
