@@ -1,196 +1,163 @@
 # AUREA — Projektdokumentation
 
-**Bewerbungs-Arbeitsprobe & Konzept zur Ausschreibung freelancermap #3014281**
+**Bewerbungs-Arbeitsprobe zur freelancermap-Ausschreibung #3014281**
 „Aufbau einer hochwertigen WordPress-Website für eine Dermatologin"
 
-Auftraggeberin: **WE FRANCHISE GmbH** (Ansprechperson Ellen Müller), Schwyz · 100 % Remote · Start 7/2026 · Arbeitssprache Deutsch.
-Erstellt von: **Gabriel Jäger · Swiss Consult Digital** · office@swissconsultdigital.ch
+Auftraggeberin: **WE FRANCHISE GmbH** (Ansprechperson Ellen Müller), Schwyz · Start 7/2026 · Arbeitssprache Deutsch.
+Erstellt von: **Gabriel Jäger, M.Sc. · Swiss Consult Digital** (Gordola TI) · office@swissconsultdigital.ch
 
-> **Hinweis:** *AUREA*, *Dr. med. Carla Brunner* und sämtliche Inhalte sind frei erfunden. Es handelt sich um einen gestalterischen Konzept-Entwurf als Arbeitsprobe, nicht um eine reale Praxis. Alle Bilder sind KI-generiert und zeigen keine realen Personen oder Behandlungsergebnisse. Die Rechtstexte sind Platzhalter.
-
----
-
-## Inhalt
-
-1. [Auftrag & Liefergegenstände](#1-auftrag--liefergegenstände)
-2. [Was diese Arbeitsprobe zeigt](#2-was-diese-arbeitsprobe-zeigt)
-3. [Seitenverzeichnis](#3-seitenverzeichnis)
-4. [Zwei Designvarianten — Begründung](#4-zwei-designvarianten--begründung)
-5. [Design-System](#5-design-system)
-6. [Interaktive Komponenten](#6-interaktive-komponenten)
-7. [Inhalt, Sprache & Compliance](#7-inhalt-sprache--compliance)
-8. [Bildwelt (KI-Pipeline)](#8-bildwelt-ki-pipeline)
-9. [Qualitätssicherung](#9-qualitätssicherung)
-10. [Abgleich gegen die Ausschreibung](#10-abgleich-gegen-die-ausschreibung)
-11. [Dateistruktur](#11-dateistruktur)
-12. [Offene Punkte vor Versand](#12-offene-punkte-vor-versand)
-13. [Nächster Schritt: WordPress](#13-nächster-schritt-wordpress)
+> **Hinweis (Demo-Marke):** *AUREA*, *Dr. med. Carla Brunner* und sämtliche Inhalte sind **frei erfunden** — ein gestalterischer Konzept-Entwurf als Arbeitsprobe, keine reale Praxis. Alle Bilder sind KI-generiert und zeigen keine realen Personen oder Behandlungsergebnisse. Die Rechtstexte sind Platzhalter. Eine reale Kunden-CI wird später token-basiert übernommen, ohne Strukturänderung.
 
 ---
 
-## 1. Auftrag & Liefergegenstände
+## Kurzfassung (TL;DR)
+
+- **Live-Demo (klickbar, statisch):** https://swissconsultdigital.github.io/aurea-derma-demo/ — ein pixelgenaues Premium-Mockup (HTML/CSS/JS) für **Desktop und Smartphone**, gebaut als abnahmefähige Design-/UX-/Performance-Referenz.
+- **WordPress:** Der Entwurf ist zusätzlich als **echtes WordPress-Block-Theme (FSE)** samt verschlüsseltem Anfrage-Plugin **lokal aufgebaut** (WordPress Studio, separates Verzeichnis) — Code-Walkthrough/Screencast auf Wunsch. *Der öffentliche Demo-Link zeigt die statische Referenz, nicht die WordPress-Instanz (GitHub Pages führt kein PHP aus).*
+- **Gemessen, nicht behauptet:** Lighthouse Desktop 100 / Mobile 94 (LCP/CLS grün); vollständiger **WCAG-2.2-AA-Audit** mit deterministischer + pixelgenauer Kontrastmessung (0 offene Verstösse); lokale Fonts, WebP, Lazy-Loading.
+
+---
+
+## 1 · Auftrag & Liefergegenstände
 
 **Ziel:** hochwertige Hauptwebsite mit Premium-Anmutung und Conversion-Fokus für eine Dermatologie-Praxis.
 
-**Liefergegenstände laut Ausschreibung:**
-- Hochwertige Hauptwebsite mit **allen Service-Seiten**.
-- **Longevity-Anamnesis-Seite** (Konzept liegt vor).
-
-**Optionale spätere Phasen:** Shop (Produkte, Pakete, Gutscheine); Mitgliederbereich mit geschütztem Zugang.
-
-**Geforderte Kompetenzen:** professionelle WordPress-Entwicklung (saubere Theme-/Plugin-Architektur), Performance-Optimierung, DSGVO/DSG-konforme Umsetzung, Arbeit mit einem **Page Builder** (Empfehlung mit Begründung erwünscht), eigenständige Designkompetenz auf Basis vorhandener CI, Erfahrung mit medizinischen/Premium-Brands von Vorteil.
+Laut Ausschreibung: hochwertige **Hauptwebsite** inkl. **aller Service-Seiten**, eigenständige **Longevity-Anamnese-Seite** (mehrstufiger Fragebogen); optionale spätere Phasen **Shop** und **Mitgliederbereich**; professionelle WordPress-Entwicklung (saubere Theme-/Plugin-Architektur), Performance, DSGVO/DSG-Konformität, **Page-Builder-Empfehlung mit Begründung**, eigenständige Designkompetenz auf Basis vorhandener CI, Erfahrung mit medizinischen/Premium-Brands von Vorteil.
 
 ---
 
-## 2. Was diese Arbeitsprobe zeigt
+## 2 · Was diese Arbeitsprobe zeigt
 
-Statt nur zu behaupten, dass wir das können, **zeigen** wir es: ein vollständiges, mehrseitiges Premium-Mockup in **zwei eigenständig gestalteten Designvarianten**, inkl. der geforderten Longevity-Anamnese-Seite, interaktiven Komponenten (Vorher/Nachher-Slider, Terminbuchung, Anamnese-Fragebogen) und konsequenter Qualitätssicherung (automatischer WCAG-/Responsive-Audit, Apple-HIG-Review).
+Statt nur zu behaupten, dass wir das können, **zeigen** wir es: ein mehrseitiges Premium-Mockup in der Designrichtung **„Noir Editorial"**, durchgängig für Desktop und Smartphone, inkl. der geforderten Longevity-Anamnese-Seite, interaktiver Komponenten und konsequenter, wiederholbarer Qualitätssicherung.
 
-Technisch ist das Mockup **statisches HTML/CSS/JS** — bewusst, weil es als pixelgenaue **Spezifikation** für den WordPress-Bau dient und ohne Server/Installation in jedem Browser läuft. Der WordPress-Aufbau ist der bezahlte Projektschritt (siehe [Kapitel 13](#13-nächster-schritt-wordpress) und `WP-AUFBAU-PLAN.md`).
+**Warum ein Mockup als klickbare Demo?** Es läuft ohne Server/Installation in jedem Browser, dient als **pixelgenaue Spezifikation** und macht Design, UX und Performance sofort erlebbar — für Desktop *und* Smartphone. Parallel dazu ist der Entwurf bereits als lauffähiges **WordPress-Block-Theme** umgesetzt (lokal, WordPress Studio), sodass die Umsetzungskompetenz belegt ist und nicht nur versprochen wird.
 
----
-
-## 3. Seitenverzeichnis
-
-| Datei | Variante | Zweck |
-|---|---|---|
-| `varianten.html` | — | **Top-Page / Chooser** — stellt beide Designvarianten gegenüber |
-| `index.html` | A | Startseite (One-Pager): Hero, Leistungen, Longevity-Teaser, Praxis, Ablauf, Stimmen, FAQ, Kontakt |
-| `longevity.html` | A | Longevity-Anamnese mit mehrstufigem Fragebogen |
-| `variante-b.html` | B | Startseite „Noir Editorial": Hero, Leistungen (Detail-Modals), Ästhetik, Longevity, Vorher/Nachher-Slider, Praxis, **Terminbuchung**, Kontakt |
-| `longevity-b.html` | B | Longevity-Anamnese im Noir-Stil: Sub-Hero, 4 Perspektiven, 5-Schritt-Ablauf, Erfassungs-Raster, **4-Schritt-Fragebogen**, FAQ |
-| `datenschutz-b.html` | B | Datenschutzerklärung (revDSG/DSGVO, Konzept-Platzhalter) |
-| `impressum-b.html` | B | Impressum (berufsrechtliche Angaben, Konzept-Platzhalter) |
-
-**Variante B ist die Variante, mit der an die Kundin herangetreten wird** — entsprechend durchgängig in sich konsistent: alle Links führen auf B-stilige Ziele, keine Stilbrüche, keine toten Links.
+*Eigenständige Designkompetenz* wird zusätzlich durch **zwei real ausgelieferte, gestalterisch gegensätzliche** Kundenprojekte belegt — [gi-solutions.ch](https://gi-solutions.ch/) (dunkel-industriell, WordPress/Divi, mehrsprachig) und [aktedigital.de](https://aktedigital.de/) (clean-corporate, Datenschutz/Conversion) —, also die Fähigkeit, eine **fremde, gegebene Markenwelt** sauber umzusetzen.
 
 ---
 
-## 4. Zwei Designvarianten — Begründung
+## 3 · Seitenverzeichnis (Mockup)
 
-Eigenständige Designkompetenz wird durch **zwei orthogonale, vollständig ausgearbeitete Richtungen** mit getrennten Token-Systemen belegt:
+| Datei | Zweck |
+|---|---|
+| `index.html` | Startseite „Noir Editorial": Hero, Leistungen-Grid (Detail-Modals), Ästhetik, Longevity, Vorher/Nachher-Slider, Pull-Quote, Ärztin/Praxis, **4-Schritt-Terminbuchung** (mobil als Vollbild-Sheet), Ausblick, Kontakt, Footer |
+| `longevity-b.html` | Longevity-Anamnese: Sub-Hero, vier Perspektiven, 5-Schritt-Ablauf, Erfassungs-Raster, **validierter 4-Schritt-Fragebogen**, FAQ |
+| `datenschutz-b.html` | Datenschutzerklärung (revDSG/DSGVO, Konzept-Platzhalter) |
+| `impressum-b.html` | Impressum (berufsrechtliche Angaben, Konzept-Platzhalter) |
 
-- **Variante A — „Warm Editorial Luxury"** (`style.css`): warmes Elfenbein/Waldgrün, Champagner-Gold, viel Weissraum. Ruhig, vertrauensbildend, ärztlich-zurückhaltend. *Wirkt einladend und sicher.*
-- **Variante B — „Noir Editorial"** (`style-b.css`): dunkle, plakative Fashion-Magazin-Anmutung, grosse High-Contrast-Serifen, Full-Bleed-Fotografie, cremefarbene Pill-Buttons. *Wirkt premium, selbstbewusst, modern.* Inspiriert von skinmed.ch (als Referenz, eigenständig umgesetzt), mit Champagner-Gold als Marken-Faden zu A.
-
-Beide teilen Marke, Inhalte und Schriftfamilien (Fraunces + Manrope), interpretieren sie aber bewusst gegensätzlich — damit die Auftraggeberin die Richtung anhand echter Entwürfe wählen kann.
-
----
-
-## 5. Design-System
-
-| | Variante A | Variante B |
-|---|---|---|
-| Hintergrund | Elfenbein `#F7F3EC` | Warm-Schwarz `#17130F` |
-| Text | Anthrazit `#1A1611` | Creme `#F3ECDF` |
-| Akzent | Champagner-Gold `#B0894F` | Champagner-Gold `#CDA15E` |
-| Display-Serife | Fraunces | Fraunces (auch kursiv) |
-| Sans / UI | Manrope | Manrope |
-
-- **Token-basiert:** beide Stylesheets definieren ein vollständiges `:root`-System (Farben, Fluid-Type-Scale, Spacing, Easing) und nutzen durchgängig `var(--…)` — dieselbe Disziplin, die den WordPress-Build schlank und wartbar macht.
-- **Kontrast-Entscheid:** Gold-Buttons tragen **dunklen** Text (nicht weiss) → WCAG-AA ~4,6:1 bei Erhalt der Marke. Gold-Text auf Hell ist abgedunkelt (`#8A6526` / `#9A7A3E`).
-- **Responsiv:** Breakpoints 360 / 390 / 768 / 1440 / 1920; mobile-first geprüft.
+Alle Seiten teilen ein Stylesheet (`assets/style-b.css`) und ein JS (`assets/b-app.js`); die Strecke ist in sich konsistent (keine Stilbrüche, keine toten Links), `lang="de-CH"`, mit `<main>`-Landmark, Skip-Link und einer `h1` je Seite.
 
 ---
 
-## 6. Interaktive Komponenten
+## 4 · Design-System
 
-Alle in `assets/b-app.js` (Variante B) bzw. `assets/app.js` (Variante A), Vanilla-JS, kein Framework.
+„Noir Editorial" — dunkle, editoriale Fashion-Magazin-Anmutung: grosse High-Contrast-Serifen, Full-Bleed-Fotografie, viel Ruhe, cremefarbene Pill-Buttons, Champagner-Gold als Akzent.
 
-| Komponente | Beschreibung | Datei/Stelle |
-|---|---|---|
-| **Vorher/Nachher-Slider** | ziehbar (Pointer + Tastatur), 3 Hautbild-Paare umschaltbar; via Gemini-Bild-Editing exakt ausgerichtet | `variante-b.html` §Ergebnisse, `b-app.js`, `ba-*.jpg` |
-| **Terminbuchung (SOTA-Mockup)** | Pills für Fachrichtung & Anliegen → Wochenkalender mit **variabler, deterministischer Verfügbarkeit** (Sin-Hash, stabil über Reloads); aktuelle Woche ausgebucht → Sprung „nächster freier Termin"; 4-Schritt-Flow mit Bestätigung | `variante-b.html` §Termin, `b-app.js` |
-| **Leistungs-Detail-Modals** | 6 Leistungen öffnen je ein Detail-Panel (Lead, Bullets, Kostenhinweis) | `variante-b.html`, `SERVICES` in `b-app.js` |
-| **Anamnese-Fragebogen** | 4-Schritt-Formular mit Fortschritt, Consent-Checkboxen, Absende-Bestätigung (Demo, keine Datenübertragung) | `longevity-b.html`, `b-app.js` |
-| **FAQ-Akkordeon** | barrierearm (`aria-expanded`), eine Antwort offen | `longevity-b.html`, `b-app.js` |
+| | Wert |
+|---|---|
+| Hintergrund (Seite / Surface / Panel) | `#17130F` / `#1E1813` / `#271F18` |
+| Text (primär / gedämpft) | Creme `#F3ECDF` / `#C3B7A4` |
+| Akzent (Gold / Gold-soft) | `#CDA15E` / `#E6D2AC` |
+| Display-Serife / Sans-UI | Fraunces (auch kursiv) / Manrope |
 
-Übertragbarkeit dieser Komponenten nach WordPress: siehe `WordPress-Umsetzung.md` und `WP-AUFBAU-PLAN.md`.
-
----
-
-## 7. Inhalt, Sprache & Compliance
-
-- **Durchgehend Schweizer Rechtschreibung** (immer „ss", nie „ß").
-- **Standeskonform, werbefrei:** keine Heilversprechen, keine Ergebnis-Garantien; Vorher/Nachher klar als „beispielhaft, individuelle Ergebnisse können abweichen" gekennzeichnet.
-- **Rechtstexte:** Datenschutzerklärung mit Bezug auf das **revidierte Schweizer Datenschutzgesetz (revDSG)** und ergänzend DSGVO; Gesundheitsdaten ausdrücklich als „besonders schützenswerte Personendaten"; Consent-Hinweise an den Formularen. Impressum mit berufsrechtlichen Angaben (FMH, Berufsausübungsbewilligung Kanton Schwyz). **Als Konzept-Platzhalter markiert**, im Projekt durch rechtlich geprüfte Texte zu ersetzen.
+- **Token-basiert:** `assets/style-b.css` definiert ein vollständiges `:root`-System (Farben, Fluid-Type-Scale via `clamp()`, Spacing, Easing, Feld-Rahmen); alles konsumiert `var(--…)` → eine CI-Übernahme ändert die Quelle an **einer** Stelle. Dieselbe Disziplin macht den WordPress-Build (`theme.json`) schlank und wartbar.
+- **Kontrast/Barrierefreiheit:** alle Text/Fläche-Paare erfüllen WCAG-AA (deterministisch geprüft, siehe §7). Formularfeld-Rahmen ≥ 3:1 (`--field-line`), sichtbarer Tastatur-Fokusring.
+- **Responsiv:** durchgehend mobile-first geprüft (u. a. 360 / 390 / 414 / 768 / 1280).
 
 ---
 
-## 8. Bildwelt (KI-Pipeline)
+## 5 · Interaktive Komponenten
 
-- **22 KI-generierte Markenbilder** (`assets/img/`), erzeugt über die **Gemini-API** (`gemini-3-pro-image`).
-- Zwei abgestimmte Bild-Sets: helles Premium-Set für Variante A, separates dunkles `b-*`-Set für Variante B; dazu die Vorher/Nachher-Paare (`ba-*`), per **Bild-Editing** für exakte Deckungsgleichheit des Sliders ausgerichtet.
-- Skript & Prompt-Spezifikation: `…/scratchpad/gemini.py` + `imgspec.json` (API-Key aus `E:\Freelance\.env`).
-- **Hinweis für Produktion:** Dateien tragen `.jpg`, enthalten technisch PNG-Daten; im WordPress-Build nach **WebP/AVIF** konvertieren und durch echte, rechtlich freigegebene Praxisfotos ersetzen.
+Alle in `assets/b-app.js` (Vanilla-JS, kein Framework).
 
----
+| Komponente | Beschreibung |
+|---|---|
+| **Goldstandard-Hero** | natives 9:16-Porträt (per Gemini-Outpainting), Scrim messgeführt für WCAG-AA-Textkontrast über Bild; Desktop-Querformat separat |
+| **Vorher/Nachher-Slider** | natives `input[type=range]` (Pointer **und** Tastatur), drei Fälle umschaltbar, `aria-pressed` |
+| **Terminbuchung** | Fachrichtung/Anliegen als Pills → Wochenkalender mit deterministischer Verfügbarkeit (Sin-Hash, stabil); **heutiger Tag markiert**, Badges frei/wenige/ausgebucht/geschlossen; **auf Smartphone: Airline-Vollbild-Sheet** (Tagesliste → Uhrzeiten) mit `role=dialog`, Fokusfalle, ESC, Live-Region; Desktop bleibt inline |
+| **Leistungs-Detail-Modals** | sechs Leistungen je als Detail-Panel; Fokusfalle + Fokus-Rückgabe an den Auslöser |
+| **Anamnese-Fragebogen** | validierter 4-Schritt-Flow (Pflichtfeld-/Format-Logik, smarte Kontaktart), Consent-Gate, `role=alert`-Zusammenfassung, Erfolgs-Fokus (Demo — keine Datenübertragung) |
+| **FAQ-Akkordeon** | Disclosure-Muster mit `aria-expanded` + `aria-controls` |
+| **Consent-Hinweis** | dezentes, barrierefreies Banner (`role=dialog`, ESC, `localStorage`) — nur technisch Notwendiges vorab, Optionales nach Einwilligung |
 
-## 9. Qualitätssicherung
-
-Zwei wiederholbare Prüfwege (jede Iteration):
-
-- **`audit/audit.py`** (Playwright) — automatischer WCAG-AA-Kontrast (DOM-Walk mit Alpha-Kompositing), horizontaler Overflow, Tap-Targets (≥44 px) und Mindest-Schriftgrösse über **5 Breakpoints × 7 Seiten**. → `audit/REPORT.md`, `audit/report.json`, Screenshots in `audit/shots/`.
-  **Aktueller Stand: 0 Kontrastverstösse · 0 Overflow · 0 zu kleine Controls.**
-- **`audit/hig_review.js`** — Multi-Agent Apple-HIG-Design-Review (qualitativ, priorisierte Befunde). → `audit/HIG_REPORT.md`.
-
-```bash
-python audit/audit.py        # WCAG + Responsive + Screenshots
-```
+Übertragbarkeit nach WordPress: `WordPress-Umsetzung.md` und `WP-AUFBAU-PLAN.md`. Die Buchung ist im WordPress-Theme an ein eigenes Plugin (`aurea-anfrage`: REST + Nonce, serverseitige Validierung, Honeypot/Rate-Limit, libsodium-Verschlüsselung, privater CPT) angebunden.
 
 ---
 
-## 10. Abgleich gegen die Ausschreibung
+## 6 · Inhalt, Sprache & Compliance
 
-Vollständiger, adversarial gegengeprüfter Anforderungsabgleich in **`audit/AUSSCHREIBUNG_ABGLEICH.md`**.
-
-**36 Anforderungen: ✅ 9 erfüllt · 🟡 20 teilweise · ⬜ 7 offen.**
-
-- **Klar erfüllt (im Mockup demonstriert):** Premium-Hauptseite, Longevity-Anamnese-Seite, eigenständige Designkompetenz (zwei Varianten), Page-Builder-Empfehlung mit Begründung, Impressum, revDSG-Bezug.
-- **Bewusst „teilweise":** vieles ist im Mockup demonstriert bzw. in den Unterlagen konzeptionell belegt, wird aber erst im bezahlten WordPress-Projekt voll umgesetzt (Performance, Theme-/Plugin-Architektur, Consent-Management, Service-Einzelseiten).
-- **Offen vor Versand:** echte Referenzen, Verfügbarkeit, Kontaktdaten; Bildoptimierung; TLS/CH-EU-Hosting/AVV; E-Commerce-/Mitgliederbereich-Skills (nur optionale Spätphasen).
-
-Zwei wichtige Befunde: (1) Leistungen sind aktuell **Modals statt eigener Service-Seiten** → im WP-Bau je eigene, indexierbare Seite. (2) Die Unterlagen versprechen **lokal gehostete Schriften**, das Mockup lädt jedoch Google-Fonts per CDN → vor Versand glattziehen oder als Produktionsschritt einordnen.
+- **Durchgehend Schweizer Rechtschreibung** („ss", nie „ß").
+- **Standeskonform, werbefrei:** keine Heilversprechen, keine Ergebnis-Garantien; Vorher/Nachher als beispielhaft gekennzeichnet.
+- **Rechtstexte:** Datenschutzerklärung mit Bezug auf das **revidierte Schweizer Datenschutzgesetz (revDSG)** und ergänzend DSGVO; Gesundheitsdaten als „besonders schützenswerte Personendaten"; Consent-Hinweise an den Formularen. Impressum mit berufsrechtlichen Angaben. **Konzept-Platzhalter** — im Projekt durch rechtlich geprüfte Texte zu ersetzen.
+- **Consent-Befund (CH):** Ohne Tracking verlangt das revDSG kein Cookie-Banner; die Demo setzt keine Analyse-/Marketing-Cookies. Das eingebaute Banner ist Kompetenz-Beleg und deckt das in der Ausschreibung genannte Consent-Management ab.
 
 ---
 
-## 11. Dateistruktur
+## 7 · Qualitätssicherung (wiederholbar)
+
+- **WCAG-2.2-AA-Audit** — `audit/WCAG-AA.md`. Kontrast **pixelgenau** (Text über Bild) + **deterministisch** über alle Token-Paare (0 Fails); 4-Perspektiven-Audit (Tastatur/Fokus, ARIA/Struktur, Formulare, Reflow/Motion/Targets); alle Befunde behoben. Mess-Tooling in `audit/wcag/` (`contrast-pairs.py`, `hero-contrast.mjs`, `analyze_contrast.py`).
+- **Automatischer Responsive-/Kontrast-Audit** — `audit/audit.py` (Playwright, DOM-Walk mit Alpha-Kompositing, Overflow, Tap-Ziele ≥ 44 px) → `audit/REPORT.md` + `audit/shots/`.
+- **Apple-HIG-Design-Review** — `audit/hig_review.js` → `audit/HIG_REPORT.md`.
+- **Performance:** Lighthouse Live-Demo Desktop **100** (LCP 0,5 s · CLS 0) / Mobile **94** (LCP 2,4 s · CLS 0); lokale Fonts (`assets/fonts/`, kein Google-CDN), WebP, Lazy-Loading, `fetchpriority` am Hero, gesetzte `aspect-ratio`.
+
+Ausschreibungs-Abgleich (adversarial gegengeprüft): `audit/AUSSCHREIBUNG_ABGLEICH.md`; aktueller Gesamtstand & Scorecard: `STAND.md`.
+
+---
+
+## 8 · Bildwelt (KI-Pipeline)
+
+- **32 KI-generierte Markenbilder als WebP** (`assets/img/`, mit JPG-Fallbacks), erzeugt über die **Gemini-API** (`gemini-3-pro-image`).
+- Werkzeuge: `tools/gemini.py` (Text-zu-Bild **und** Bild-Editing/Outpainting, `edit`/`batch`-Befehle), `tools/imgspec.json`; API-Key aus `E:\Freelance\.env` (nicht im Repo).
+- Der Hero ist ein **Outpaint** des Desktop-Porträts zu nativem 9:16 (gleiche Person Desktop↔Mobile).
+- **Für Produktion:** durch echte, rechtlich freigegebene Praxisfotos ersetzen.
+
+---
+
+## 9 · Dateistruktur
 
 ```
-aurea-mockup/
-├─ index.html, longevity.html              # Variante A
-├─ variante-b.html, longevity-b.html       # Variante B (Kundenrichtung)
-├─ datenschutz-b.html, impressum-b.html    # Variante B — Rechtstexte
-├─ varianten.html                          # Top-Page / Chooser
+aurea-mockup/                              # dieses Repo → deployt als statische Live-Demo (GitHub Pages)
+├─ index.html                             # Startseite „Noir Editorial"
+├─ longevity-b.html                       # Longevity-Anamnese (4-Schritt-Fragebogen)
+├─ datenschutz-b.html, impressum-b.html   # Rechtstexte (Platzhalter)
 ├─ assets/
-│  ├─ style.css, app.js                    # Design-System A
-│  ├─ style-b.css, b-app.js                # Design-System B (geteilt über alle B-Seiten)
-│  └─ img/                                  # 22 KI-Bilder (A-Set, b-*, ba-*)
+│  ├─ style-b.css, b-app.js               # Design-System + Interaktionen
+│  ├─ fonts/                              # lokale woff2 (Fraunces normal/italic, Manrope)
+│  └─ img/                                # 32 WebP (+ JPG-Fallbacks)
 ├─ audit/
-│  ├─ audit.py, REPORT.md, report.json     # WCAG/Responsive-Audit
-│  ├─ hig_review.js, HIG_REPORT.md         # Apple-HIG-Review
-│  ├─ AUSSCHREIBUNG_ABGLEICH.md            # Anforderungsabgleich
-│  └─ shots/                               # Audit-Screenshots
-├─ versand/                                # komprimierte JPGs + Präsentations-PDF
-├─ Bewerbung.md                            # Anschreiben + Page-Builder-/DSG-/Performance-Konzept
-├─ WordPress-Umsetzung.md                  # Übertragbarkeit Mockup → WordPress
-├─ WP-AUFBAU-PLAN.md                       # Konkreter Bau-Runbook (nächster Schritt)
-├─ DOKUMENTATION.md                        # ← dieses Dokument
-└─ README.md                               # Kurzüberblick / Quickstart
+│  ├─ WCAG-AA.md                          # WCAG-2.2-AA-Audit (aktuell)
+│  ├─ wcag/                               # Mess-Tooling (contrast-pairs.py, hero-contrast.mjs, analyze_contrast.py)
+│  ├─ audit.py, REPORT.md, report.json    # Playwright-Responsive-/Kontrast-Audit
+│  ├─ hig_review.js, HIG_REPORT.md        # Apple-HIG-Review
+│  ├─ AUSSCHREIBUNG_ABGLEICH.md           # Anforderungsabgleich (adversarial geprüft)
+│  └─ shots/                              # Audit-Screenshots
+├─ tools/  gemini.py, imgspec.json, screenshot.py
+├─ versand/                               # Präsentations-PDF, Screenshots, Anschreiben (.docx)
+├─ Bewerbung.md                           # Anschreiben + Page-Builder-/DSG-/Performance-Konzept
+├─ STAND.md                               # aktueller Stand + Scorecard
+├─ WordPress-Umsetzung.md, WP-AUFBAU-PLAN.md   # WP-Architektur / Runbook
+├─ DOKUMENTATION.md                       # ← dieses Dokument
+└─ README.md                              # Kurzüberblick
+
+Separates Verzeichnis (nicht in diesem Repo): das reale WordPress-Block-Theme
+(FSE, theme.json, Patterns) + Plugin `aurea-anfrage`, lokal in WordPress Studio.
 ```
 
 ---
 
-## 12. Offene Punkte vor Versand
+## 10 · WordPress-Umsetzung & Page-Builder-Empfehlung
 
-1. **Anschreiben-Platzhalter** in `Bewerbung.md` füllen: Verfügbarkeit/Startdatum, Kontaktdaten, echte Referenzen (`[…]`).
-2. **Schriften-Widerspruch** glattziehen: lokale Fonts auch im Mockup oder als Produktionsschritt deklarieren.
-3. Optional: eine **echte Service-Detailseite** in Variante B exemplarisch bauen (statt nur Modal).
+Das Mockup ist die **abnahmefähige Spezifikation**; das WordPress-**Block-Theme (FSE)** ist parallel bereits lokal aufgebaut (Design-System als `theme.json` + Block-Patterns, interaktive Komponenten übernommen, Buchung an das verschlüsselte Plugin `aurea-anfrage` angebunden). Runbook & Architektur: `WP-AUFBAU-PLAN.md` / `WordPress-Umsetzung.md`.
+
+**Page-Builder-Empfehlung (mit Begründung):** der **native WordPress-Block-/Site-Editor (FSE)** als Primär — lizenzfrei, beste Performance ohne Builder-Ballast, DSG-freundlich (Teil des Kerns), laienpflegbar über **gesperrte Block-Patterns** (`templateLock:"contentOnly"`). **Elementor Pro** als gleichwertige, benannte Alternative, falls eine klassische Drag-and-drop-Oberfläche gewünscht ist. Abwägung (Bricks, Divi) siehe `Bewerbung.md` §3.
+
+*Konsistenz-Hinweis:* Die massgebliche, an die Kundin gerichtete Positionierung steht in `Bewerbung.md` (Block-Editor primär). `WP-AUFBAU-PLAN.md`/`WordPress-Umsetzung.md` sind interne Runbooks und stellen ggf. Elementor voran — beim Versand zählt `Bewerbung.md`.
 
 ---
 
-## 13. Nächster Schritt: WordPress
+## 11 · Für Produktion offen (bewusst, ehrlich)
 
-Das Mockup ist die **abnahmefähige Spezifikation**. Der WordPress-Aufbau ist im separaten Runbook **`WP-AUFBAU-PLAN.md`** beschrieben: empfohlene Zielarchitektur, Docker-freie lokale Dev-Umgebung, Schritt-für-Schritt-Phasen, Plugin-Mapping für die interaktiven Komponenten, DSG/Performance und Go-Live.
-
-**Empfehlung in Kürze:** WordPress auf schlankem Theme + **Elementor Pro** (für die nicht-technische Bedienbarkeit, wie in der Ausschreibung verlangt), das Mockup-Design-System als globale Styles übernommen; CH/EU-Hosting, DSG-konform, Core-Web-Vitals-optimiert. Details und Alternative (schlankes Custom-Theme) im Runbook.
+- **Alle Service-Seiten:** in der Demo als Detail-Ansichten; im Produktivbau je Leistung eine eigene, indexierbare Seite (SEO).
+- **TLS + CH/EU-Hosting + AVV + Verarbeitungsverzeichnis:** konzeptionell (`Bewerbung.md` §4), bei Umsetzung realisiert.
+- **Echte Inhalte/Fotos/Rechtstexte** statt Platzhalter/KI-Bilder.
+- **Shop / Mitgliederbereich:** als spätere, abgegrenzte Phasen konzipiert (nicht gebaut).
