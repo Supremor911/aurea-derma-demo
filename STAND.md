@@ -4,6 +4,25 @@
 > AUREA, Dr. med. Carla Brunner, Schwyz). Dieses Dokument ist der aktuelle Gesamtstatus; der
 > detaillierte 36-Anforderungs-Abgleich liegt in `audit/AUSSCHREIBUNG_ABGLEICH.md`.
 
+## ✅ Status: Bewerbung eingereicht (1.7.2026)
+
+Die Bewerbung ist auf **freelancermap #3014281** platziert. Gesendet: das kurze Schweizer Anschreiben
+(`Bewerbung.md` §2, Word-Fassung `versand/Anschreiben_freelancermap.docx`) + klickbare **Live-Demo**
++ Präsentations-PDF/Screenshots. **Ehrliches Framing** bewusst durchgehalten: statische Demo
+(Design/UX/Performance — Lighthouse 100/94, WCAG-2.2-AA, Mobile-first) **und** lokal gebautes
+WordPress-Block-Theme (Code-Walkthrough auf Wunsch); Demo-Marke AUREA als **fiktiv** deklariert,
+Umsetzung **auf Basis der echten Kunden-CI** zugesagt. Angebot: **Pauschalpreis-first** (Ergebnis +
+fester Termin), Orientierung ~CHF 110/h; persönliches Gespräch (Schwyz oder Video) angeboten.
+Live-Demo: https://swissconsultdigital.github.io/aurea-derma-demo/
+
+**Bei Zuschlag (Produktivbau) offen:** echte Kunden-CI in `theme.json`/Tokens übernehmen · alle
+Leistungen als eigene, indexierbare Seiten (SEO) statt Detail-Ansichten · Anamnese-/Buchungsdaten an
+den sicheren Pfad (Plugin `aurea-anfrage`, verschlüsselt) · CH/EU-Hosting + TLS + AVV +
+Verarbeitungsverzeichnis · echte Fotos/Rechtstexte statt KI-Bildern/Platzhaltern · Consent-Tool nur
+bei realem Tracking · optionale Spätphasen Shop (WooCommerce) + Mitgliederbereich.
+
+*(Hinweis: die Kapitel unten sind der Detail-Status VOR Einreichung — inhaltlich weiter gültig.)*
+
 ## Was steht
 
 - **Statischer Mockup** (Arbeitsprobe), zwei Designrichtungen: Variante A „Warm" (hell, Ivory)
